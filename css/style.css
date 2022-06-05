@@ -82,7 +82,7 @@
 }
 
 .menu-slider__item {
-    background: url("/img/bg-wood.jpg") top center / cover no-repeat;
+    background: url("../img/bg-wood.jpg") top center / cover no-repeat;
     width: 25%;
     position: relative;
     transition: all 0.2s linear;
@@ -123,7 +123,7 @@
 }
 
 .menu-slider__item:hover {
-    background: url("/img/bg-wood-active.jpg") top center / cover no-repeat;
+    background: url("../img/bg-wood-active.jpg") top center / cover no-repeat;
     box-shadow: inset 0 0 10px rgb(0 0 0 / 30%);
 }
 
@@ -134,7 +134,7 @@
 }
 
 .service {
-    background-image: url("/img/jollibee-kid-party-bg.png");
+    background-image: url("../img/jollibee-kid-party-bg.png");
     background-size: contain;
     padding: 80px 0;
     margin: 0;
@@ -199,7 +199,7 @@
 
 
 .welcome {
-    background: url("/img/about_bg.jpg")  center / cover no-repeat;
+    background: url("../img/about_bg.jpg")  center / cover no-repeat;
     min-height: 645px;
 }
 
