@@ -83,7 +83,6 @@
 
 .menu-slider__item {
     background: url("../img/bg-wood.jpg") top center / cover no-repeat;
-    width: 25%;
     position: relative;
     transition: all 0.2s linear;
 }
@@ -106,7 +105,7 @@
     background-color: #c81f34;
     border-radius: 20px 20px 0 0 ;
     padding: 20px;
-    transform: translateY(60px);
+    transform: translateY(70px);
     transition: all 0.5s ease-in-out;
 }
 
@@ -116,7 +115,8 @@
 }
 
 .menu-item__title img {
-    width: 180px;
+    max-width: 180px;
+    width: 100%;
     height: 40px;
     margin: 0 auto 30px auto;
     display: block;
@@ -228,6 +228,7 @@
 
 .welcome-text button {
     background-color: #e31c3d;
+    position: relative;
 }
 
 .store-search {
@@ -349,16 +350,9 @@
 
     .menu-slider {
         width: 100%;
-        flex-direction: column;
     }
 
-    .menu-slider__item {
-        width: 100%;
-    }
 
-    .menu-item__title {
-        transform: translateY(0);
-    }
     .menu-item {
         width: 100%;
         margin-bottom: 10px;
@@ -376,21 +370,6 @@
     .swiper .btn-slide {
         display: none;
     }
-}
-
-@media (min-width: 768px) {
-    .col-sm-4 {
-        width: 33.3333333333%;
-    }
-}
-
-@media (min-width: 992px) {
-    .col-md-3 {
-        width: 25%;
-    }
-}
-
-@media (max-width: 767px) {
     .service-main {
         flex-direction: column;
     }
@@ -401,6 +380,52 @@
     .today-text {
         padding: 0;
     }
+}
+
+@media (min-width: 768px) {
+    .col-sm-4 {
+        width: 33.3333333333%;
+    }
+
+    .menu-slider__item {
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-3 {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
 
 
+    .menu-slider {
+        flex-wrap: wrap;
+    }
+
+    .menu-slider__item {
+        width: 49%;
+        margin: 3px 0 3px 3px!important;
+    }
+
+    .menu-slider__item > img {
+        margin: 24px 0px 100px 0;
+    }
+    .menu-item__title {
+        padding: 4px 20px;
+        transform: translateY(0);
+    }
+
+
+    .menu-item__title img{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .menu-item__title button {
+        padding: 6px;
+        font-size: inherit;
+    }
 }
