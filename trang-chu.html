@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jollibee Việt Nam</title>
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
-   
-    <link rel="stylesheet" href="/icon/fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.0.0-beta3-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=vietnamese">
-    <link rel="stylesheet" href="/css/base.css">
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet"></head>
+    <link href="//db.onlinewebfonts.com/c/870c14ea660dc49cbcf9c92af21392af?family=Merge" rel="stylesheet" type="text/css"/>
 <body>
   
   <div class="offcanvas offcanvas-end text-white " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label" aria-modal="false" role="dialog">
@@ -67,25 +68,25 @@
       </div>
     </div>
   </div>
-    <header class="header navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
+  <header class="header navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
         <div class="container-fluid ">
-            <button class="navbar-toggler col-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+            <button class="navbar-toggler col-4 col-lg-2  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="header-logo col-4 col-lg-2">
                 <a class="navbar-brand logo-img" href="#">
-                    <img src="/img/LogoJB_New-02.png" alt="">
+                    <img src="./img/LogoJB_New-02.png" alt="">
                 </a>
             </div>
             <div class="navbar-body ">
                 <div class="user ">
-                  <a href="#" class="user-login btn-icon">
+                  <a href="#" class="user-login btn-icon show-modal">
                     <i class="fa-solid fa-user "></i>
                   </a>
-                  <span class="login">
+                  <span class="login show-modal">
                       <a href="" class="login-item">Đăng ký / Đăng nhập</a> 
                   </span>
-                  <Span class="lang">
+                  <Span class="lang ">
                       <a href="" class="lang-item active-lang">VN</a>
                       |
                       <a href="" class="lang-item">ENG</a>
@@ -108,37 +109,37 @@
                             <ul class="text-center">
                               <li class="menu-item">
                                 <a href="" class="menu-item__img">
-                                  <img class="menulist-img" src="/img/mon-moi-mon-ngon.png" alt="">
+                                  <img class="menulist-img" src="./img/mon-moi-mon-ngon.png" alt="">
                                 </a>
                                 <h5>COMBO</h5>
                               </li>
                               <li class="menu-item">
                                 <a href="" class="menu-item__img">
-                                  <img class="menulist-img" src="/img/ga-gion-vui-ve.png" alt="">
+                                  <img class="menulist-img" src="./img/ga-gion-vui-ve.png" alt="">
                                 </a>
                                 <h5>GÀ GIÒN VUI VẺ</h5>
                               </li>
                               <li class="menu-item">
                                 <a href="" class="menu-item__img">
-                                  <img class="menulist-img" src="/img/ga-sot-cay.png" alt="">
+                                  <img class="menulist-img" src="./img/ga-sot-cay.png" alt="">
                                 </a>
                                 <h5>GÀ SỐT CAY</h5>
                               </li>
                               <li class="menu-item">
                                 <a href="" class="menu-item__img">
-                                  <img class="menulist-img" src="/img/mi-y.png" alt="">
+                                  <img class="menulist-img" src="./img/mi-y.png" alt="">
                                 </a>
                                 <h5>MÌ Ý SỐT BÒ BẰM</h5>
                               </li>
                               <li class="menu-item">
                                 <a href="" class="menu-item__img">
-                                  <img class="menulist-img" src="/img/burger-sandwich.png" alt="">
+                                  <img class="menulist-img" src="./img/burger-sandwich.png" alt="">
                                 </a>
                                 <h5>BUEGER & CƠM</h5>
                               </li>
                               <li class="menu-item">
                                 <a href="" class="menu-item__img">
-                                  <img class="menulist-img" src="/img/phan-an-phu.png" alt="">
+                                  <img class="menulist-img" src="./img/phan-an-phu.png" alt="">
                                 </a>
                                 <h5>PHẦN ĂN PHỤ</h5>
                               </li>
@@ -175,14 +176,290 @@
             </div>
             <div class="delivery col-4 col-lg-2">
               <a href="" class="delivery-logo">
-                <img class="devivery-img" src="/img/delivery.png" alt="">
+                <img class="devivery-img" src="./img/delivery.png" alt="">
               </a>
             </div>
         </div>
-      </header>
+  </header>
+  <div class="section">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <button class="btn-default btn-slide btn-yellow">-ĐẶT HÀNG</button>
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <a href="" class="swiper-slide">
+          <img src="./img/mì ý.jpg" alt="" />
+        </a href="">
+        <a href="" class="swiper-slide">
+          <img src="./img/cặp đôi.jpg" alt="" />
+        </a href="">
+        <a href="" class="swiper-slide">
+          <img src="./img/tải app.jpg" alt="" />
+        </a href="">
+
+        <a href="" class="swiper-slide">
+          <img src="./img/măm gà giòn.jpg" alt="" />
+        </a href="">
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="today-list row">
+      <div class="today-text col-sm-3 text-center">
+        <div class="today-logo">
+          <img src="./img/logo.png" alt="">
+        </div>
+        <h3>ĂN GÌ <br> HÔM NAY</h3>
+        <p>Thực đơn Jollibee đa dạng và phong phú, có rất nhiều sự lựa chọn cho bạn, gia đình và bạn bè.</p>
+      </div>
+
+      <div class="today-menu col-sm-9">
+        <div class="menu-slider">
+          <a href="" class="menu-slider__item ">
+            <img src="./img/menugagionvuive.png" alt="">
+            <div class="menu-item__title">
+              <img src="./img/titlegagionvuive.png" alt="">
+              <button class="btn-default btn-yellow">ĐẶT HÀNG</button>
+            </div>
+          </a>
+          <a href="" class="menu-slider__item ">
+            <img src="./img/menugasotcay.png" alt="">
+            <div class="menu-item__title">
+              <img src="./img/titlegasotcay.png" alt="">
+              <button class="btn-default btn-yellow">ĐẶT HÀNG</button>
+            </div>
+          </a>
+          <a href="" class="menu-slider__item ">
+            <img src="./img/menumiysotbobam.png" alt="">
+            <div class="menu-item__title">
+              <img src="./img/titlemiysotbobam.png" alt="">
+              <button class="btn-default btn-yellow">ĐẶT HÀNG</button>
+            </div>
+          </a>
+          <a href="" class="menu-slider__item ">
+            <img src="./img/exporttradao.png" alt="">
+            <div class="menu-item__title">
+              <img src="./img/montrangmieng01.png" alt="">
+              <button class="btn-default btn-yellow">ĐẶT HÀNG</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service text-center row">
+      <div class="service-text">
+        <h3>DỊCH VỤ</h3>
+        <p>TẬN HƯỞNG KHOẢNH KHẮC TRỌN VẸN CÙNG JOLLIBEE</p>
+      </div>
+      <div class="service-main">
+        <div class="service-img ">
+          <a href="" class="service-item ">
+            <img src="./img/tiecsinhnhat.png" alt="">
+          </a>
+          <div class="service-body">
+            <h3>ĐẶT TIỆC SINH NHẬT</h3>
+            <button class="btn-default btn-red btn-change">XEM THÊM</button>
+          </div>
+        </div>
+        <div class="service-img ">
+          <a href="" class="service-item ">
+            <img src="./img/kidclud.png" alt="">
+          </a>
+          <div class="service-body">
+            <h3>JOLLIBEE KID CLUB</h3>
+            <button class="btn-default btn-red btn-change">XEM THÊM</button>
+          </div>
+        </div>
+        <div class="service-img ">
+          <a href="" class="service-item ">
+            <img src="./img/donhanglon.png" alt="">
+          </a>
+          <div class="service-body">
+            <h3>ĐƠN HÀNG LỚN</h3>
+            <button class="btn-default btn-red btn-change">XEM THÊM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="welcome text-center">
+      <div class="welcome-text">
+        <h1>JOLLIBEE, XIN CHÀO</h1>
+        <p>Chúng tôi là Jollibee Việt Nam với hơn 100 cửa hàng trên khắp cả nước, chúng tôi mong muốn đem đến niềm vui ẩm thực cho mọi gia đình Việt bằng những món ăn có chất lượng tốt, hương vị tuyệt hảo, dịch vụ chu đáo với một mức giá hợp lý… Hãy đến và thưởng thức nhé!</p>
+        <button class="btn-default btn-red btn-slide">ĐẶT HÀNG</button>
+      </div>
+    </div>
+
+    <div class="store-search ">
+      <div class="form-search row">
+        <div class="col-md-3 col-xs-12 ">
+          <h3 class="search-control">TÌM CỬA HÀNG</h3>
+        </div>
+        <div class="col-md-3 col-sm-4 px-4">
+          <select name="city" id="" class="search-control">
+            <option value="0">Chọn tỉnh thành</option>
+          </select>
+        </div>
+        <div class="col-md-3 col-sm-4 px-4">
+          <select name="town" id="" class="search-control">
+            <option value="0">Chọn quận huyện</option>
+          </select>
+        </div>
+        <div class="col-md-3 col-sm-4 px-4">
+          <button class="search-control btn-default btn-red btn-search">Tìm kiếm</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="infomation text-center">
+      <div class="info-text">
+        <h3>TIN TỨC</h3>
+      </div>
+      <div class="info-img">
+        <a href="" class="info-link">
+          <div class="tRes">
+            <img src="./img/new1.jpg" alt="">
+          </div>
+        </a>
+        <a href="" class="info-link">
+          <div class="tRes">
+            <img src="./img/news2.jpg" alt="">
+          </div>
+        </a>
+        <a href="" class="info-link">
+          <div class="tRes">
+            <img src="./img/new3.jpg" alt="">
+          </div>
+        </a>
+        <a href="" class="info-link">
+          <div class="tRes">
+            <img src="./img/news4.jfif" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="info-btn">
+        <button class="btn-default btn-red">XEM THÊM</button>
+      </div>
+    </div>
 
 
-      
-    <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+    <!-- Modal -->
+    <div class="modal-login" style="display: none;">
+    <div class="modal-overlay">
+    </div>
+    <div class="modal-login__body ">
+      <a href="" class="modal__close">
+        <i class="fa-solid fa-xmark modal__close-icon"></i>
+      </a>
+      <div class="modal__inner text-white">
+        <img src="./img/logo.png" alt="" class="modal__img">
+        <p>ĐĂNG NHẬP BẰNG SĐT</p>
+        <div class="modal__form">
+          <input type="email" class="modal__input" placeholder="Email" >
+        </div>
+        <div class="modal__form">
+          <input type="password" class="modal__input" placeholder="Mật khẩu">
+        </div>
+        <div class="modal__form">
+          <label>
+            <input type="checkbox" name="" id="">
+            <span>
+              Ghi nhớ đăng nhập
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="modal-option text-center">
+        <p>Quên mật khẩu</p>
+        <button class="btn-default btn-red btn-modal btn-login">ĐĂNG NHẬP</button> <br>
+        <button class="btn-default btn-blue btn-modal btn-option"><i class="fa-brands fa-facebook-f"></i> ĐĂNG NHẬP BẰNG FACEBOOK</button> <br>
+        <button class="btn-default btn-red btn-modal btn-option"><i class="fa-brands fa-google"></i> ĐĂNG NHẬP BẰNG GOOGLE</button> <br>
+        <span>Bạn chưa có tài khoản? Nhấn <a href="">vào đây</a> để đăng ký</span>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid footer">
+    <div class="footer-img">
+      <a href="" class="footer-img__logo">
+        <img class="img-responsive" src="./img/LogoJB_New-02.png" alt="">
+      </a>
+    </div>
+    <div class="footer-text">
+      <div class="row">
+        <div class="col-4 address ">
+          <p>CÔNG TY TNHH JOLLIBEE VIỆT NAM</p>
+          <p>Địa chỉ: Lầu 5, tòa nhà SCIC, 16 Trương Định, Phường Võ Thị Sáu, Quận 3, Tp. Hồ Chí Minh, Việt Nam</p>
+          <p>Điện thoại: (028) 39309168</p>
+          <p>Tổng đài: <a href="">1900-1533</a></p>
+          <p>Email: <a href="">jbvnfeedback@jollibee.com.vn</a></p>
+          <p>Mã số thuế: 0303883266</p>
+          <p>Ngày cấp: 15/07/2008 – Nơi cấp: Cục Thuế Hồ Chí Minh</p>
+          <p>Gửi phản hồi đến cửa hàng <a href=""><b>TẠI ĐÂY</b></a></p>
+          <p>Gửi phản hồi đến Trụ sở chính Jollibee Việt Nam <b><a href="">TẠI ĐÂY</a></b></p>
+        </div>
+        <div class="col-sm-8">
+          <div class="col-12 col-sm-6 text-center phone">
+            <p class="number">
+              <a href="" title="GIAO HÀNG TẬN NƠI MIỄN PHÍ">
+                <img src="./img/delivery-lg.png" alt="" class="img-responsive">
+              </a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 text-center">
+            <p class="text-uppercase">HÃY KẾT NỐI VỚI CHÚNG TÔI</p>
+            <a href="" class="footer-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              
+            </a>
+            <a href="" class="footer-icon">
+              <i class="fa-brands fa-google"></i>
+            </a>
+            <div class="col-md-12">
+              <a href="">
+                <img class="confirm-logo" src="./img/bocongthuong.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-12">
+            <ul class="list-inline list-page">
+                <li><a href="">Chính sách và quy định chung</a></li>
+                <li><a href="">Chính sách hoạt động</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <ul class="list-inline list-page">
+                <li><a href="">Chính sách thanh toán khi đặt hàng</a></li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <ul class="list-inline list-page">
+                <li><a href="">Hướng dẫn đặt phần ăn</a></li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <ul class="list-inline list-page">
+                <li><a href="">Thông tin vận chuyển và giao nhận</a></li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <ul class="list-inline list-page">
+                <li><a href="">Thông tin đăng ký giao dịch chung</a></li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <ul class="list-inline list-page">
+                <li><a href="">Chính sách bảo mật thông tin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
 </body>
+
+  <script src="./app.js"></script>
 </html>

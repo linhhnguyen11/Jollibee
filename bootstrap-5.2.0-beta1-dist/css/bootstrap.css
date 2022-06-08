@@ -566,6 +566,7 @@ progress {
 
 .list-inline {
   padding-left: 0;
+  margin-left: -5px;
   list-style: none;
 }
 
@@ -746,6 +747,8 @@ progress {
 }
 
 .col-4 {
+  padding-left: 15px;
+  padding-right: 15px;
   flex: 0 0 auto;
   width: 33.33333333%;
 }
@@ -975,6 +978,8 @@ progress {
   }
 
   .col-sm-8 {
+    padding-left: 15px;
+    padding-right: 15px;
     flex: 0 0 auto;
     width: 66.66666667%;
   }
@@ -4099,7 +4104,7 @@ textarea.form-control-lg {
     flex-basis: auto;
   }
   .navbar-expand-sm .navbar-toggler {
-    display: none;
+    display: block;
   }
   .navbar-expand-sm .offcanvas {
     position: static;
@@ -4146,7 +4151,7 @@ textarea.form-control-lg {
     flex-basis: auto;
   }
   .navbar-expand-md .navbar-toggler {
-    display: none;
+    display: block;
   }
   .navbar-expand-md .offcanvas {
     position: static;
@@ -4170,6 +4175,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
+
 @media (min-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
