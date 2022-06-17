@@ -7,7 +7,10 @@
 * {
     box-sizing: inherit;
 }
-
+@font-face {
+    font-family: MergeBlack;
+    src: url("../font/MergeBlack.woff");
+}
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -15,7 +18,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    /*font-family: "MergeBlack", sans-serif;*/
     margin: 0;
 }
 
