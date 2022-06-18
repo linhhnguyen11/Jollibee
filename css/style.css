@@ -54,7 +54,7 @@
 
 .today-text h3 {
     font-size: 3.8rem;
-    font-weight: 800;
+    font-family: "MergeBlack";
     margin: 0.8rem auto;
 }
 
@@ -142,7 +142,7 @@
 
 .service-text h3 {
     font-size: 40px;
-    font-weight: 800;
+    font-family: "MergeBlack";
     color: #ca1133;
     margin: 16px 0;
 }
@@ -151,7 +151,7 @@
     margin: 10px 0;
     color: #000;
     font-size: 20px;
-    font-weight: 800;
+    font-family: "MergeBlack";
 }
 
 .service-main {
@@ -175,7 +175,7 @@
 
 .service-body h3 {
     font-size: 20px;
-    font-weight: 800;
+    font-family: "MergeBlack";
     margin-top: 10px;
     margin-bottom: 32px;
 }
@@ -214,7 +214,7 @@
 .welcome-text h1 {
     margin: 3.2rem 0;
     font-size: 40px;
-    font-weight: 800;
+    font-family: "MergeBlack";
     color: #ca1133;
 }
 
@@ -243,7 +243,7 @@
 
 .form-search h3 {
     font-size: 38px;
-    font-weight: 800;
+    font-family: "MergeBlack";
 }
 
 .search-control {
@@ -277,7 +277,7 @@
 .info-text h3{
     color: #ca1133 ;
     font-size: 40px;
-    font-weight: 800;
+    font-family: "MergeBlack";
     margin: 16px 0 50px;
 }
 
@@ -427,5 +427,284 @@
     .menu-item__title button {
         padding: 6px;
         font-size: inherit;
+    }
+}
+
+
+/* Tin tuc CSS */
+
+.section {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 40%);
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.banner-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: #fff;
+    width: 400px;
+    height: 400px; 
+}
+
+.banner-item {
+    width: 100%;
+    padding: 0 32px;
+}
+
+.banner-item h1{
+    font-family: "MergeBlack";
+    font-size: 45px;
+}
+
+.banner-item p {
+    font-size: 15px;
+    margin: 35px 0;
+    font-weight: 700;
+}
+
+.banner-item i {
+    animation: bounce 0.7s linear infinite;
+}
+
+.news {
+    text-align: center;
+    padding: 45px 0  30px 30px;
+}
+
+.news-list {
+
+}
+
+.news-item {
+    width: calc(100%/3 - 80px);
+    padding: 16px;
+    margin: 0 30px 30px 0;
+    background-color: #F4F4F4;
+    box-shadow: 0 0 4px 4px rgb(0 0 0 / 20%);
+    text-align: center;
+}
+
+.inf-item img,
+.news-item img {
+    width: 100%;
+}
+
+.inf-item h3,
+.news-item h3 {
+    font-family: "MergeBlack";
+    font-size: 18px;
+    color: #303030;
+    margin: 16px 0;
+    line-height: 24px;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.inf-item p,
+.news-item p {
+    height: 72px;
+    font-size: 15px;
+    color: #5E5E5E;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.add-list {
+    font-family: "MergeBlack";
+    transition: all 0.3s ease;
+}
+
+.add-list h1 {
+    font-size: 40px;
+    margin: 8px 0;
+}
+
+.add-list i {
+    font-size: 24px;
+    animation: bounce 0.7s linear infinite;
+}
+
+.add-list:hover {
+    color: #e31c3d;
+}
+
+.franchise {
+    position: relative;
+}
+
+.franchise-banner {
+    position: relative;
+}
+
+.franchise-banner > img {
+    width: 100%;
+}
+
+.franchise-banner::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-title {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.banner-title h1 {
+    font-family: "MergeBlack";
+    font-size: 45px;
+    margin: 0;
+}
+
+.banner-title img {
+    margin: 20px 0;
+}
+
+.banner-title p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.franchise-body {
+    width: 90%;
+    margin: -88px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.franchise-body ul {
+    font-family: "MergeBlack";
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.franchise-body li {
+    width: calc(100%/3);
+    text-align: center;
+    background-color: #FAC437;
+    font-size: 24px;
+    color: #030302;
+    padding: 32px 15px 28px;
+    line-height: 28px; 
+    border-right: 1px solid #FFDE94;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.franchise-body li:hover {
+    background-color: #C91133;
+    color: #fff;
+}
+.tab-item.active {
+    background-color: #C91133;
+    color: #fff;
+}
+.franchise-inf {
+    background-color: #FFDE94;
+    display: flex;
+
+}
+
+.franchise-inf__img {
+    width: 30%;
+    padding: 48px;
+}
+
+.franchise-inf__img img {
+    width: 100%;
+}
+
+.franchise-inf__tab {
+    width: 70%;
+    padding: 48px 48px 24px 0;
+    transition: all 0.3s ease;
+}
+
+.list-img {
+    display: flex;
+}
+
+.franchise-inf__tab p {
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+
+.inf-item {
+    width: calc(100%/3 - 20px);
+    padding: 16px;
+    margin: 0 20px 30px 0;
+    background-color: #F4F4F4;
+    box-shadow: 0 0 4px 4px rgb(0 0 0 / 20%);
+    text-align: center;
+}
+
+
+.franchise-inf__tab a {
+    color: #CE181F;
+}
+
+.franchise-inf__tab a:hover {
+    text-decoration: revert;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+
+    100%{
+        transform: translateY(0px);
     }
 }

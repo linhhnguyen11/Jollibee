@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body onload="renderData()">
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <!-- logo -->
+                <div class="logo_name">ADMIN MANAGER</div>
+            </div>
+            <i class="fa-solid fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a class="nav-item" href="">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="links_name">Trang chủ</span>
+                </a>
+                <span class="tooltip">Trang chủ</span>
+            </li>
+            <li>
+                <a class="nav-item active" href="">
+                    <i class="fa-solid fa-burger"></i>
+                    <span class="links_name">Thực đơn</span>
+                </a>
+                <span class="tooltip">Thực đơn</span>
+            </li>
+            <li>
+                <a class="nav-item" href="">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span class="links_name">Khuyến mãi</span>
+                </a>
+                <span class="tooltip">Khuyến mãi</span>
+            </li>
+            <li>
+                <a class="nav-item" href="">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="links_name">Tài khoản</span>
+                </a>
+                <span class="tooltip">Tài khoản</span>
+            </li>
+            <li>
+                <a class="nav-item" href="">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="links_name">Cài đặt</span>
+                </a>
+                <span class="tooltip">Cài đặt</span>
+            </li>
+        </ul>
+    </div>
+    <div class="home_content">
+        <div class="content-item">Home</div>
+        <div class="content-item active">
+            <div class="tabs">
+                <div class="tab-item active">
+                    <p>Danh sách sản phẩm</p>
+                </div>
+            </div>
+
+            <div class="tabs-panel">
+                <div class="panel-item active">
+                    <div class="add-form">
+                        <div class="tool">
+                            <button class="add-form_btn">                            
+                                <span class="form_btn-text">Thêm món</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                            <div class="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" name="" id="search" placeholder="Tìm kiếm" oninput="searchItem()">
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <div class="form-group">
+                                <label for="name">Tên món: </label>
+                                <input id="name" type="text" class="form-input">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Giá tiền: </label>
+                                <input id="money" type="text" class="form-input">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Loại: </label>
+                                <input id="group-id" type="text" class="form-input">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Tên nhóm: </label>
+                                <input id="group-name" type="text" class="form-input">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="hidden" name="" id="index">
+                            </div>
+                            <button id="add" class="submit-btn">Submit</button>
+                            <button  id="save" style="display: none;" class="save-btn" onclick="changeItem()">Save</button>
+                        </div>
+                    </div>
+
+                    <table id="table-content"    class="table-content">
+                        <tr>
+                            <th>Name</th>
+                            <th>Money</th>
+                            <th>GroupID</th>
+                            <th>GroupName</th>
+                            <th>Action</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="content-item">Khuyến mãi</div>
+        <div class="content-item">Tài khoản</div>
+        <div class="content-item">Cài đặt</div>
+    </div>
+
+    <script src="./admin.js"></script>
+</body>
+</html>
