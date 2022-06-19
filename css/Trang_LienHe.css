@@ -1,6 +1,5 @@
 #main{
     width: 100%;
-    height: 559.6px;
     background-color: #ffde94;
     display:flex;
     flex-direction:column;
@@ -117,4 +116,26 @@ textarea{
 @font-face {
     font-family: MergeBlack;
     src: url("../Font/MergeBlack.woff");
+}
+ @media (max-width: 768px)
+ {
+    #container{
+        flex-direction: column;
+    }
+    .doan_van{
+        width: 100%;
+        padding:0px 20px;
+        
+    }
+    .form{
+        width: 100%;
+
+    }
+    #inputid{
+        flex-direction: column;
+    }
+    #submit{
+        width: 45%;
+        
+    }
 }
