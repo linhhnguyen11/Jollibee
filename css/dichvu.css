@@ -91,3 +91,51 @@ p{
 .color3{
     color: #5dc6d1;
 }
+
+.banner-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: #fff;
+    width: 400px;
+    height: 400px; 
+}
+
+.banner-item {
+    width: 100%;
+    padding: 0 32px;
+}
+
+.banner-item h1{
+    font-family: "MergeBlack";
+    font-size: 45px;
+}
+
+.banner-item p {
+    font-size: 15px;
+    margin: 35px 0;
+    font-weight: 700;
+}
+
+.banner-item i {
+    animation: bounce 0.7s linear infinite;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}

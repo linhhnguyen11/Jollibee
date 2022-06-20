@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/admin.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <div class="login-form">
+            <div class="login-logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="login-content">
+                <div class="login-group">
+                    <h1>Tên đăng nhập</h1>
+                    <input class="login-user" type="text" placeholder="Tên đăng nhập">
+                </div>
+                <div class="login-group">
+                    <h1>Mật khẩu</h1>
+                    <input class="login-pass" type="password" placeholder="Mật khẩu">
+                </div>
+                <button class="submit-login">
+                    <a class="login-link" href="">Đăng nhập</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let loginName = document.querySelector(".login-user");
+        let loginPass = document.querySelector(".login-pass");
+        let submitLogin = document.querySelector(".submit-login");
+        let linkLogin = document.querySelector(".login-link");
+        console.log(loginName);
+        console.log(submitLogin);
+        function checkLogin() {
+            if(loginName.value === "linhnguyen" && loginPass.value === "linhnguyen") {
+                linkLogin.href = "./admin.html";
+            } else {
+                alert("Sai thông tin đăng nhập!");
+            }
+        }
+        submitLogin.onclick = function() {
+            checkLogin();
+        }
+    </script>
+</body>
+</html>

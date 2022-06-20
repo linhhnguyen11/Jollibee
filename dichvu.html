@@ -95,7 +95,7 @@
                     <div class="">            
                       <ul class="navbar-nav justify-content-center flex-grow-1 ">
                         <li class="navbar-item">
-                          <a class="navbar-link active" aria-current="page" href="./trang-chu.html">TRANG CHỦ</a>
+                          <a class="navbar-link " aria-current="page" href="./trang-chu.html">TRANG CHỦ</a>
                         </li>
                         <li class="navbar-item">
                           <a class="navbar-link" href="./vejollibee.html">VỀ JOLLIBEE</a>
@@ -155,19 +155,19 @@
                             <a class="navbar-link " aria-current="page" href="./khuyenmai.html">KHUYẾN MÃI</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link " aria-current="page" href="./dichvu.html">DỊCH VỤ</a>
+                            <a class="navbar-link active" aria-current="page" href="./dichvu.html">DỊCH VỤ</a>
                         </li>
                         <li class="navbar-item">
                             <a class="navbar-link " aria-current="page" href="./tintuc.html">TIN TỨC</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link " aria-current="page" href="#">CỬA HÀNG</a>
+                            <a class="navbar-link " aria-current="page" href="./cuahang.html">CỬA HÀNG</a>
                         </li>
                         <li class="navbar-item">
                             <a class="navbar-link " aria-current="page" href="./Trang_lienhe.html">LIÊN HỆ</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link active" aria-current="page" href="./tuyendung.html">TUYỂN DỤNG</a>
+                            <a class="navbar-link " aria-current="page" href="./tuyendung.html">TUYỂN DỤNG</a>
                         </li>
                       </ul>
                 </div>
@@ -184,18 +184,27 @@
       <section class="banner">
         
           <img class="img" src="./img/news.jpg" alt="">
-          
+          <div class="banner-text">
+            <div class="banner-item text-center">
+                <h1>TIN TỨC</h1>
+                <img src="./img/popline.svg" alt="">
+                <p>TẬN HƯỞNG NHỮNG KHOẢNH KHẮC TRỌN VẸN CÙNG JOLLIBEE</p>
+                <a  href="#1">
+                  <i class="fa-solid fa-angles-down fa-2x"></i>
+                </a>
+            </div>
+        </div>
       </section>
           
          
       <section class="service-entry odd shadow">
           <div class="max-width">
-              <a class="left" href="./Thucdon.html">
+              <a id="1" class="left" href="./Thucdon.html">
                   <img class="pic" src="/img/1.png" alt="">
               </a>
               <div class="right">
                   <h4>1900 - 1533</h4>
-                  <a class="btn-default btn " href="">-Xem thêm</a>
+                  <a class="btn-default btn " href="./Thucdon.html">-Xem thêm</a>
               </div>
           </div>
       </section>
@@ -328,7 +337,42 @@
       </div>
     </div>
   </footer>
-
+    <!-- Modal -->
+    <div class="modal-login" style="display: none;">
+      <div class="modal-overlay">
+      </div>
+      <div class="modal-login__body ">
+        <a href="" class="modal__close">
+          <i class="fa-solid fa-xmark modal__close-icon"></i>
+        </a>
+        <div class="modal__inner text-white">
+          <img src="./img/logo.png" alt="" class="modal__img">
+          <p>ĐĂNG NHẬP BẰNG SĐT</p>
+          <div class="modal__form">
+            <input type="email" class="modal__input" placeholder="Email" >
+          </div>
+          <div class="modal__form">
+            <input type="password" class="modal__input" placeholder="Mật khẩu">
+          </div>
+          <div class="modal__form">
+            <label>
+              <input type="checkbox" name="" id="">
+              <span>
+                Ghi nhớ đăng nhập
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="modal-option text-center">
+          <p>Quên mật khẩu</p>
+          <button class="btn-default btn-red btn-modal btn-login">ĐĂNG NHẬP</button> <br>
+          <button class="btn-default btn-blue btn-modal btn-option"><i class="fa-brands fa-facebook-f"></i> ĐĂNG NHẬP BẰNG FACEBOOK</button> <br>
+          <button class="btn-default btn-red btn-modal btn-option"><i class="fa-brands fa-google"></i> ĐĂNG NHẬP BẰNG GOOGLE</button> <br>
+          <span>Bạn chưa có tài khoản? Nhấn <a href="./dangky.html">vào đây</a> để đăng ký</span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
 <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

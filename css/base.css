@@ -198,6 +198,7 @@ input:focus {
     border-radius: 10px 10px 0 0;
     color: var(--white-color);
     margin: 0 5.5px;
+    white-space: nowrap;
 }
 .navbar-list .navbar-item:hover .navbar-link{
     color: #950E08;

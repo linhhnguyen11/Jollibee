@@ -110,7 +110,7 @@
           <h1>Cơ hội nghề nghiệp</h1>
           <div class="hire-body">
             <div class="hire-filter">
-                <button class="filter-btn">Áp dụng bộ lọc</button>
+                <button class="filter-btn ">Áp dụng bộ lọc</button>
                 <div class="filter-room">
                   <h1>Phòng ban</h1>
                   <div class="filter-search">
@@ -118,20 +118,20 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </div>
                   <p>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="radio">
                     Tất cả
                   </p>
                   <p>
-                    <input type="checkbox" name="" id="">
-                    Tất cả
+                    <input type="checkbox" name="" id="radio">
+                    Khối cửa hàng - Operations
                   </p>
                   <p>
-                    <input type="checkbox" name="" id="">
-                    Tất cả
+                    <input type="checkbox" name="" id="radio">
+                    Khối văn phòng - MO
                   </p>
                   <p>
-                    <input type="checkbox" name="" id="">
-                    Tất cả
+                    <input type="checkbox" name="" id="radio">
+                    Khối nhà xưởng - Commi
                   </p>
                 </div>
                 <div class="filter-room ">
@@ -143,76 +143,76 @@
                   <div class="filter-location">
   
                     <p class="a">
-                      <input type="checkbox" name="" id="">
+                      <input type="checkbox" name="" id="radio">
                       Tất cả
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      Khu vực miền Bắc
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      Khu vực Bắc Trung Bộ
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      Khu vực Miền Trung
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      Khu vực MêKong
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      Khu vực Nam Trung Bộ
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      Khu vực Đông Nam Bộ
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      Khu vực miền Nam
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      [MO] Phòng Phát triển mặt bằng
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      [MO] Phòng kế toán
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      [MO] Phòng Công nghệ thông tin
                     </p>
                     <p>
-                      <input type="checkbox" name="" id="">
-                      Tất cả
+                      <input type="checkbox" name="" id="radio">
+                      [MO] Phòng Quản lí chất lượng
                     </p>
                   </div>
                 </div>
                 <div class="filter-room">
-                  <h1>Phòng ban</h1>
+                  <h1>Loại công việc</h1>
                   <div class="filter-search">
                     <input type="text" placeholder="Lọc phòng ban...">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </div>
                   <p>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="radio">
                     Tất cả
                   </p>
                   <p>
-                    <input type="checkbox" name="" id="">
-                    Tất cả
+                    <input type="checkbox" name="" id="radio">
+                    Full-time
                   </p>
                   <p>
-                    <input type="checkbox" name="" id="">
-                    Tất cả
+                    <input type="checkbox" name="" id="radio">
+                    Part-time
                   </p>
                   <p>
-                    <input type="checkbox" name="" id="">
-                    Tất cả
+                    <input type="checkbox" name="" id="radio">
+                    Intern
                   </p>
                 </div>
                 <div class="share">
@@ -507,7 +507,18 @@
     <p class="footer-end">Cung cấp bởi E-Hiring</p>
 
   </footer>
-  
+      <script>
+        const radioInput = document.querySelectorAll("#radio");
+        const btnFilter = document.querySelector(".filter-btn");
+        for(var inputs of radioInput) {
+          inputs.addEventListener('click', function() {
+            if(this.checked == true) {
+              btnFilter.classList.add("active");
+            }
+          })
+        }
+      </script>
+      <script src="./js/app2.js"></script>
       <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
     </body>
 </html>

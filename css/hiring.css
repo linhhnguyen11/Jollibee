@@ -313,6 +313,12 @@ a {
     margin-bottom: 8px;
 }
 
+
+.filter-btn.active {
+    cursor: pointer!important;
+    opacity: 1;
+}
+
 .filter-search input {
     border: none;
     width: 100%;
@@ -422,6 +428,10 @@ a {
     border: 1px dashed #e5e5e5;
     padding: 15px 16px;
     margin-bottom: 20px;
+}
+
+.apply-item:hover {
+    background-color: rgba(0 0 0 / 2%);
 }
 
 
@@ -674,11 +684,14 @@ a {
 .btn-apply {
     padding: 10px 40px;
     font-size: 14px;
-    margin: 32px 0 24px 0;
 }   
 
 .btn-apply a {
     color: #fff;
+}
+
+.job-detail > .btn-apply {
+    margin: 32px 0 24px 0;
 }
 
 .job-detail hr {

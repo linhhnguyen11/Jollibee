@@ -44,7 +44,6 @@ const submitBtn = document.querySelector(".submit-btn");
 function clear() {
   document.getElementById("name").value = ""
   document.getElementById("money").value = "";
-  document.getElementById("group-id").value = "";
   document.getElementById("group-name").value = "";
 
 }
@@ -64,11 +63,10 @@ function renderSearch(array) {
   let item = `
     <tr>
       <th>STT</th>
-      <th>Name</th>
-      <th>Money</th>
-      <th>GroupID</th>
-      <th>GroupName</th>
-      <th>Action</th>
+      <th>Tên món</th>
+      <th>Giá tiền</th>
+      <th>Danh mục</th>
+      <th>Hành động</th>
     </tr>
     `;
 
@@ -77,8 +75,7 @@ function renderSearch(array) {
       <tr>
         <td>${index+1}</td>
         <td>${value.name}</td>
-        <td>${value.money}</td>
-        <td>${value.groupID}</td>
+        <td>${value.money} VNĐ</td>
         <td>${value.groupName}</td>
         <td>
           <button class="btn-edit" onclick="editItem(${index})">Sửa</button>
@@ -102,15 +99,12 @@ function addData() {
     if(checkError) {
         let name = document.getElementById("name").value;
         let money = document.getElementById("money").value;
-        let groupID = document.getElementById("group-id").value;
         let groupName = document.getElementById("group-name").value;
         let listItem  = localStorage.getItem("list-item") ? JSON.parse(localStorage.getItem("list-item")) : [];
         if(listItem.length === 0) {
-          alert("Sản phẩm");
           listItem.push({
             name: name,
             money: money,
-            groupID: groupID,
             groupName: groupName
           })
         }
@@ -125,7 +119,6 @@ function addData() {
               listItem.push({
                 name: name,
                 money: money,
-                groupID: groupID,
                 groupName: groupName
             })
               break;
@@ -143,11 +136,10 @@ function renderData() {
     let item = `
     <tr>
       <th>STT</th>
-      <th>Name</th>
-      <th>Money</th>
-      <th>GroupID</th>
-      <th>GroupName</th>
-      <th>Action</th>
+      <th>Tên</th>
+      <th>Giá tiền</th>
+      <th>Danh mục</th>
+      <th>Hành động</th>
     </tr>
     `;
 
@@ -156,8 +148,7 @@ function renderData() {
       <tr>
         <td>${index+1}</td>
         <td>${value.name}</td>
-        <td>${value.money}</td>
-        <td>${value.groupID}</td>
+        <td>${value.money} VNĐ</td>
         <td>${value.groupName}</td>
         <td>
           <button class="btn-edit" onclick="editItem(${index})">Sửa</button>
@@ -180,7 +171,6 @@ function editItem(index) {
   let listItem  = localStorage.getItem("list-item") ? JSON.parse(localStorage.getItem("list-item")) : [];
   document.getElementById("name").value = listItem[index].name;
   document.getElementById("money").value = listItem[index].money;
-  document.getElementById("group-id").value = listItem[index].groupID;
   document.getElementById("group-name").value = listItem[index].groupName;
   document.getElementById("index").value = index;
   document.getElementById("add").style.display = "none";
@@ -193,7 +183,7 @@ function changeItem() {
   let index = document.getElementById("index").value;
   var checkRepeat = document.getElementById("name").value;
   for(var i=0; i<listItem.length; i++) {
-    if(listItem[i].name === checkRepeat ) 
+    if(listItem[i].name === checkRepeat && i !== index) 
     {
       alert("Sản phẩm đã tồn tại");
       break;
@@ -201,9 +191,9 @@ function changeItem() {
       listItem[index] = {
         name: document.getElementById("name").value,
         money: document.getElementById("money").value,
-        groupID: document.getElementById("group-id").value,
         groupName: document.getElementById("group-name").value,
       }
+      break;
     }
   }
 
@@ -236,3 +226,61 @@ function searchItem() {
   renderSearch(item);
 
 }
+
+// Chart Start 
+const ctx = document.getElementById('lineChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12'],
+        datasets: [{
+            label: 'Thống kê doanh thu 12 tháng (Trăm triệu đồng)',
+            data: [45, 2, 4, 14, 6, 8, 12, 18, 26,30,52,60],
+            backgroundColor: [
+                'rgba(85 , 85, 85, 1)',
+            ],
+            borderColor: [
+                'rgb(41, 155, 99)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+// Ứng tuyển
+
+const btnActive = document.querySelectorAll(".waitting");
+
+btnActive.forEach(value => {
+  value.onclick = function () {
+     value.classList.toggle("active");
+     if(value.classList.value === "waitting active") {
+      value.innerText = "Đã nhận";
+     } else {
+      value.innerText = "Đang chờ";
+     }
+  };
+})
+
+// Cart Start 
+
+let btnDetails = document.querySelectorAll(".btn-detail");
+
+let cartDetails = document.querySelectorAll(".cart-item__detail");
+
+btnDetails.forEach((btnDetail,index) => {
+  let cartDetail = cartDetails[index];
+
+  btnDetail.onclick = function() {
+    cartDetail.classList.toggle("active");
+  }
+})
+

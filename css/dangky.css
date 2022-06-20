@@ -22,7 +22,7 @@ body{
 .form-label{
     margin-left: 25%;
     width: 50%;
-    text-align: center;
+
 }
 .title{
     color: #ca1133;
@@ -33,6 +33,7 @@ body{
     line-height: 3rem;
     text-transform: uppercase;
     font-family: MergeBlack;
+    text-align: center;
 }
 .col1{
     

@@ -97,6 +97,7 @@
 }
 
 .menu-item__title {
+    display: inline-block;
     position: absolute;
     text-align: center;
     left: 20px;
@@ -540,6 +541,7 @@
 .add-list {
     font-family: "MergeBlack";
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .add-list h1 {
@@ -706,5 +708,133 @@
 
     100%{
         transform: translateY(0px);
+    }
+}
+
+
+/* Cửa hàng */
+.store-address {
+    display: flex;
+}
+
+.address-select {
+    flex: 1;
+    padding: 30px 80px;
+    background-color: #ffd477;
+}
+
+.address-select h1 {
+    font-family: "MergeBlack";
+    font-size: 20px;
+    color: #C91133;
+}
+
+.address-select select {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    width: 30%;
+}
+
+.address-select button {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.address-text {
+    flex: 1;
+    padding: 30px 15px;
+    background-color: #FBC436;
+    text-align: center;
+}
+
+.address-text h3{
+    font-family: "MergeBlack";
+    font-size: 20px;
+}
+
+.address-text p {
+    font-size: 16px;
+}
+
+/* resposive */
+
+@media (max-width: 1024px) {
+    .store-address {
+        flex-direction: column;
+    }
+
+    .address-select select {
+        display: block;
+        width: 100%;
+        margin-right: 80px;
+        margin-bottom: 12px;
+    }
+
+    .banner-text {
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+    }
+
+    .news-list > .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-item {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .franchise-inf {
+        display: block;
+    }
+
+    .franchise-inf .franchise-inf__img {
+        width: 100%;
+
+    }
+
+    .franchise-inf .franchise-inf__tab {
+        width: 100%;
+        padding: 15px 15px;
+    }
+
+    .franchise-inf__tab.active {
+        display: block;
+    }
+
+    .franchise-inf > .row {
+        margin: 0;
+    }
+
+    .franchise-inf  .list-img {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .inf-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-text h1 {
+        font-size: 35px;
+    }
+
+    .banner-text  img {
+        display: none;
+    }
+    
+    .banner-text i {
+        display: none;
     }
 }

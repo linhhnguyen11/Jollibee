@@ -118,10 +118,10 @@
         </div>
         <div class="navbar-body">
           <div class="user">
-            <a href="#" class="user-login btn-icon">
+            <a href="#" class="user-login btn-icon show-modal">
               <i class="fa-solid fa-user"></i>
             </a>
-            <span class="login">
+            <span class="login show-modal">
               <a href="" class="login-item">Đăng ký / Đăng nhập</a>
             </span>
             <span class="lang">
@@ -134,15 +134,15 @@
             <div class="">
               <ul class="navbar-nav justify-content-center flex-grow-1">
                 <li class="navbar-item">
-                  <a class="navbar-link active" aria-current="page" href="./trang-chu.html"
+                  <a class="navbar-link " aria-current="page" href="./trang-chu.html"
                     >TRANG CHỦ</a
                   >
                 </li>
                 <li class="navbar-item">
-                  <a class="navbar-link" href="#">VỀ JOLLIBEE</a>
+                  <a class="navbar-link" href="./vejollibee.html">VỀ JOLLIBEE</a>
                 </li>
                 <li class="navbar-item children">
-                  <a class="navbar-link" href="#"> THỰC ĐƠN </a>
+                  <a class="navbar-link active" href="#"> THỰC ĐƠN </a>
                   <div class="menu-list">
                     <ul class="text-center">
                       <li class="menu-item">
@@ -234,7 +234,7 @@
                   >
                 </li>
                 <li class="navbar-item">
-                  <a class="navbar-link" aria-current="page" href="#"
+                  <a class="navbar-link" aria-current="page" href="./cuahang.html"
                     >CỬA HÀNG</a
                   >
                 </li>
@@ -244,7 +244,7 @@
                   >
                 </li>
                 <li class="navbar-item">
-                  <a class="navbar-link active" aria-current="page" href="./tuyendung.html"
+                  <a class="navbar-link " aria-current="page" href="./tuyendung.html"
                     >TUYỂN DỤNG</a
                   >
                 </li>
@@ -1373,6 +1373,42 @@
         </div>
       </div>
     </footer>
+        <!-- Modal -->
+        <div class="modal-login" style="display: none;">
+          <div class="modal-overlay">
+          </div>
+          <div class="modal-login__body ">
+            <a href="" class="modal__close">
+              <i class="fa-solid fa-xmark modal__close-icon"></i>
+            </a>
+            <div class="modal__inner text-white">
+              <img src="./img/logo.png" alt="" class="modal__img">
+              <p>ĐĂNG NHẬP BẰNG SĐT</p>
+              <div class="modal__form">
+                <input type="email" class="modal__input" placeholder="Email" >
+              </div>
+              <div class="modal__form">
+                <input type="password" class="modal__input" placeholder="Mật khẩu">
+              </div>
+              <div class="modal__form">
+                <label>
+                  <input type="checkbox" name="" id="">
+                  <span>
+                    Ghi nhớ đăng nhập
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="modal-option text-center">
+              <p>Quên mật khẩu</p>
+              <button class="btn-default btn-red btn-modal btn-login">ĐĂNG NHẬP</button> <br>
+              <button class="btn-default btn-blue btn-modal btn-option"><i class="fa-brands fa-facebook-f"></i> ĐĂNG NHẬP BẰNG FACEBOOK</button> <br>
+              <button class="btn-default btn-red btn-modal btn-option"><i class="fa-brands fa-google"></i> ĐĂNG NHẬP BẰNG GOOGLE</button> <br>
+              <span>Bạn chưa có tài khoản? Nhấn <a href="./dangky.html">vào đây</a> để đăng ký</span>
+            </div>
+          </div>
+        </div>
+        <script src="./js/app.js"></script>
     <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>

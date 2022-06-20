@@ -25,3 +25,5 @@ captacha.addEventListener("click", ()=>{
 function removeCapcha() {
     captacha.innerText = "";
 }
+
+
