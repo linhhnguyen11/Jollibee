@@ -1,0 +1,120 @@
+#main{
+    width: 100%;
+    height: 559.6px;
+    background-color: #ffde94;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    font-family: "MergeBlack", sans-serif;
+    font-size: 40px;
+    margin-left: 12.5%;
+    margin-bottom: 0.8em;
+}
+h3{
+        font-family: "MergeBlack", sans-serif;
+        font-size: 25px;
+        margin: 10px;
+    
+}
+.doan_van{
+    margin-bottom: 10px;
+    font-size:16px;
+    text-align: justify;
+    width: 30%;
+    margin-right: 15px;
+}
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+input{
+    margin: 10px;
+}
+textarea{
+    margin: 10px;
+}
+#inputid{
+    display: flex;
+    width: 100%;
+}
+.item{
+    flex: 50%;
+}
+.input_item
+{
+    color: black;
+    border: 1px solid #fac437;
+    background-color: #fac437;
+    border-radius: 15px;
+    min-height: 2.4375rem;
+    padding:10px;
+    font-size:14px;
+}
+#submit{
+    width: 35%;
+    border-radius: 20px;
+    margin: 10px;
+}
+.button_custom {
+    font-family: "MergeBlack", sans-serif;
+    -webkit-transition: all 0.2s linear, visibility 0;
+    -o-transition: all 0.2s linear, visibility 0;
+    transition: all 0.2s linear, visibility 0;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+  }
+.button_custom::after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.2;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+    -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 1;
+  }
+.button_custom:hover::after {
+    left: 120%;
+    -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    color: #fff;
+  }
+.button_custom-red
+{
+    background-color: #c62026;;
+    font-size: 1.5625rem;
+    padding: 9px 30px;
+    margin-top: 40px;
+ 
+}
+::placeholder{
+    color: black;
+}
+@font-face {
+    font-family: MergeBlack;
+    src: url("../Font/MergeBlack.woff");
+}
