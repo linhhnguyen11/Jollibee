@@ -1,0 +1,21 @@
+.banner{
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.4);
+    
+}
+.img{
+    width: 100%;
+    height: auto;
+   
+}
+.title{
+    font-family: MergeBlack;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 80px;
+    font-size: 23px;
+}
+.text{
+    padding-left: 350px;
+    padding-right: 350px;
+    font-size: 16px;
+}
