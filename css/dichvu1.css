@@ -1,5 +1,5 @@
 .section1{
-    background-image: url(/img/pattern2.jpg);
+    background-image: url(../img/pattern2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
