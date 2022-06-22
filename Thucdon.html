@@ -259,6 +259,8 @@
         </div>
       </div>
     </header>
+
+ 
     <main>
       <img src="/img/backround.jpg" class="Thucdon_background" alt="" />
 
@@ -289,13 +291,51 @@
           >
         </li>
       </ul>
+     <div id="container_TinhThanh" class="hidden">
+      <div id="Tinh_thanh" >
+       <div class="TinhThanh_top">
+        <div id="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div>
+         <img src="/img/anhwebjollibee/logo.png" alt="Không hiển thị" width="120px" height="120px" class="anh_logo">
+        <h1>VUI LÒNG CHỌN TỈNH THÀNH</h1>
+       <div class="container_select ">
+         <select name="" id="select_Tinh" onchange="selectTinh()" class="form-select mb-2">
+           <option value="Ha_Noi">
+             Ha Noi
+           </option>
+           <option value="HCM">
+             TP.Ho Chi Minh
+           </option>
+         </select> 
+         <select name="" id="select_Quan" class="form-select" onchange="selectQuan()">
+          <option value="" disabled selected>Chọn quận huyện</option>
+          <option value="">Q.Tay Ho</option>
+          <option value="">Q.Dong Da</option>
+          <option value="">Q.Ba Dinh</option>
+         </select>
+       </div>
+       </div>
+        </div>
+        <div class="TinhThanh_bottom ">
+          <div class="container_Giatri mb-3">
+          <p class="p_giatri"> Nơi bạn vừa chọn có giá trị tối thiểu là</p>
+          <div id="Giatri_toithieu" ><p class="hidden gia_tri">60.000đ</p></div>
+        </div>
+        <button id="Xac_nhan" class="button_custom button_custom-red">Xác nhận</button>
+        <p class="p_LuuY m-3">*Chúng tôi chưa phục vụ giao hàng tận nơi tại những khu vực nằm ngoài danh sách trên, mong quý khách thông cảm</p>
+        </div>
+       </div>
+     </div>
       <div id="thucdon_container">
         <button class="button_custom button_custom-yellow ">-Đặt hàng theo nhóm</button>
         <!--THUC DON 1-->
         <div class="thuc_don thucdon_combo display_flex">
           <div class="row">
-            <div class="select_food col-sm-4 border_right_bottom">
-              <img
+            <div class="select_food col-sm-4 border_right_bottom select_01" id="select_food_1">
+              <div>
+                <img
                 src="../img/anhwebjollibee/ngotcay.png"
                 alt="không hiển thị"
                 width="268px"
@@ -305,25 +345,549 @@
                 02 GÀ SỐT CAY + 02 MỲ Ý SỐT BÒ BẰM + 01 KHOAI TÂY CHIÊN VỪA + 2
                 LY PEPSI VỪA
               </h3>
-              <span class="price">149.000 đ</span>
-              <button class="button_custom button_custom-red">Đặt hàng</button>
+              </div>
+              <div class="combo-container style-2 hidden " style="z-index: 9999;" id="panel_1">
+                <div class="panel-group" id="accordion_dish_138" role="tablist" aria-multiselectable="true">
+                  <!--panel 1-->
+                  <div data-group="1">
+                    <div class="panel-heading " role="tab">
+                      <h4 class="panel-title1">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-1"
+                          aria-expanded="true" aria-controls="collapseOne" 12="">
+                          Upsize Nước
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-1" class="panel-collapse collapse  in upsize1" role="tabpanel"
+                      aria-labelledby="headingOne">
+                      <div class="panel-body1">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Pepsi" data-price="0" data-child-name="" data-child-price=""
+                                data-id="191" data-child-id="191">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/ecfce3ec7ca3b3-9ae9100a4fec658885746d2293b05.png"
+                                    alt="Pepsi" class="img-responsive center-block">
+                                  Pepsi
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn"
+                                    data-code="1890032" data-price="5000">
+                                    Pepsi lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579140539000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890032" data-price="5000"
+                                        data-name="Pepsi lớn">
+                                      <label class="white" for="checkbox-138-1-1579140539000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda" data-price="0" data-child-name="" data-child-price=""
+                                data-id="182" data-child-id="182">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b092f57fb78aeb-a7de88025cf7f67.png" alt="Mirinda"
+                                    class="img-responsive center-block">
+                                  Mirinda
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Mirinda Cam lớn"
+                                    data-code="1890034" data-price="5000">
+                                    Mirinda Cam lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579148735000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890034" data-price="5000"
+                                        data-name="Mirinda Cam lớn">
+                                      <label class="white" for="checkbox-138-1-1579148735000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 Up" data-price="0" data-child-name="" data-child-price="" data-id="16"
+                                data-child-id="16">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/0529ce59a0c42b-4005332.png" alt="7 Up"
+                                    class="img-responsive center-block">
+                                  7 Up
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn"
+                                    data-code="1890033" data-price="5000">
+                                    7 up lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579148653000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890033" data-price="5000"
+                                        data-name="7 up lớn">
+                                      <label class="white" for="checkbox-138-1-1579148653000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Ca cao vừa" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="220" data-child-id="220">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/82650b1b8ab424-1890056_cacao.png" alt="Ca cao vừa"
+                                    class="img-responsive center-block">
+                                  Ca cao vừa
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Ca cao lớn"
+                                    data-code="1890099" data-price="15000">
+                                    Ca cao lớn + 15000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579170112000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890099" data-price="15000"
+                                        data-name="Ca cao lớn">
+                                      <label class="white" for="checkbox-138-1-1579170112000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Nước suối đóng chai" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="219" data-child-id="219">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/1ae7168550fbc1-nuocsuoi.png"
+                                    alt="Nước suối đóng chai" class="img-responsive center-block">
+                                  Nước suối đóng chai
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Trà đào (nhỏ)" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="217" data-child-id="217">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/679634345ea944-0f550a170bb756tradao.png"
+                                    alt="Trà đào (nhỏ)" class="img-responsive center-block">
+                                  Trà đào (nhỏ)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Trà đào (lớn)"
+                                    data-code="1890083" data-price="15000">
+                                    Trà đào (lớn) + 15000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579151199000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890083" data-price="15000"
+                                        data-name="Trà đào (lớn)">
+                                      <label class="white" for="checkbox-138-1-1579151199000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--panel 3-->
+                  <div data-group="3">
+                    <div class="panel-heading panel-heading3" role="tab">
+                      <h4 class="panel-title">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-3"
+                          aria-expanded="true" aria-controls="collapseOne" 25="" class="">
+                          Add on
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-3" class="panel-collapse collapse in" role="tabpanel"
+                      aria-labelledby="headingOne" aria-expanded="true" style="">
+                      <div class="panel-body3">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Súp bí đỏ" data-price="10000" data-child-name=""
+                                data-child-price="" data-id="252" data-child-id="252">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/3fedd9a3b81327-sup.png" alt="Súp bí đỏ"
+                                    class="img-responsive center-block">
+                                  Súp bí đỏ
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="224" data-child-id="224">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b49f1bb23bb599-1890003_mirinda.png"
+                                    alt="Mirinda nhỏ - 330ml" class="img-responsive center-block">
+                                  Mirinda nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Mirinda lớn - 450ml" data-code="1890095" data-price="10000">
+                                    Mirinda lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250929000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890095" data-price="10000"
+                                        data-name="Mirinda lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250929000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 up nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="223" data-child-id="223">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/14a0814e94c7e1-1890002_7up.png"
+                                    alt="7 up nhỏ - 330ml" class="img-responsive center-block">
+                                  7 up nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn - 450ml"
+                                    data-code="1890094" data-price="10000">
+                                    7 up lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250875000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890094" data-price="10000"
+                                        data-name="7 up lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250875000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Pepsi nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="222" data-child-id="222">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/d2b67a39d10cfb-pepsi.png" alt="Pepsi nhỏ - 330ml"
+                                    class="img-responsive center-block">
+                                  Pepsi nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn - 450ml"
+                                    data-code="1890093" data-price="10000">
+                                    Pepsi lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249614000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890093" data-price="10000"
+                                        data-name="Pepsi lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579249614000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Khoai Tây Chiên (Vừa)" data-price="15000" data-child-name=""
+                                data-child-price="" data-id="221" data-child-id="221">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/c58a26e4ae5299-1860001_khoaivua.png"
+                                    alt="Khoai Tây Chiên (Vừa)" class="img-responsive center-block">
+                                  Khoai Tây Chiên (Vừa)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Khoai Tây Chiên (lớn)" data-code="1860079" data-price="20000">
+                                    Khoai Tây Chiên (lớn) + 20000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249088000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1860079" data-price="20000"
+                                        data-name="Khoai Tây Chiên (lớn)">
+                                      <label class="white" for="checkbox-138-3-1579249088000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="confirm">
+                  <input type="hidden" name="comboPrice" value="149000">
+                  <div class="msgChosenDishes">
+                  </div>
+                  <div class="combo-price pull-left">149.000 đ</div>
+                  <button class="pull-right btn add-to-cart combo button_custom button_custom-red" id="btn-confim" style="margin-top:10px;" data-id="138">Đặt hàng</button>
+                </div>
+                <span class="combo-close"></span>
+              </div>
+              <span class="price" id="price1">149.000 đ</span>
+              <button class="button_custom button_custom-red" id="click_dathang">Đặt hàng</button>
             </div>
-            <div class="select_food col-sm-4 border_right_bottom">
-              <img
+            <div class="select_food col-sm-4 border_right_bottom select_01"  id="select_food_2">
+              <div>
+
+                <img
                 src="../img/anhwebjollibee/second.png "
                 alt="không hiển thị"
                 width="268px"
                 height="268px"
-              />
-              <h3>
-                03 GÀ GIÒN VUI VẺ + 01 MỲ Ý SỐT BÒ BẰM + 01 KHOAI TÂY CHIÊN VỪA
-                + 2 LY PEPSI VỪA
-              </h3>
-              <span class="price">139.000 đ</span>
-              <button class="button_custom button_custom-red">Đặt hàng</button>
+                />
+                <h3>
+                  03 GÀ GIÒN VUI VẺ + 01 MỲ Ý SỐT BÒ BẰM + 01 KHOAI TÂY CHIÊN VỪA
+                  + 2 LY PEPSI VỪA
+                </h3>
+              </div>
+              <div class="combo-container style-2 hidden" style="z-index: 9999;" id="panel_2">
+                <div class="panel-group" id="accordion_dish_138" role="tablist" aria-multiselectable="true">
+                  <!--panel 1-->
+                  <div data-group="1">
+                    <div class="panel-heading " role="tab">
+                      <h4 class="panel-title1">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-1"
+                          aria-expanded="true" aria-controls="collapseOne" 12="">
+                          Upsize Nước
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-1" class="panel-collapse collapse  in upsize2" role="tabpanel"
+                      aria-labelledby="headingOne">
+                      <div class="panel-body1">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Pepsi" data-price="0" data-child-name="" data-child-price=""
+                                data-id="191" data-child-id="191">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/ecfce3ec7ca3b3-9ae9100a4fec658885746d2293b05.png"
+                                    alt="Pepsi" class="img-responsive center-block">
+                                  Pepsi
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn"
+                                    data-code="1890032" data-price="5000">
+                                    Pepsi lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579140539000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890032" data-price="5000"
+                                        data-name="Pepsi lớn">
+                                      <label class="white" for="checkbox-138-1-1579140539000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda" data-price="0" data-child-name="" data-child-price=""
+                                data-id="182" data-child-id="182">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b092f57fb78aeb-a7de88025cf7f67.png" alt="Mirinda"
+                                    class="img-responsive center-block">
+                                  Mirinda
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Mirinda Cam lớn"
+                                    data-code="1890034" data-price="5000">
+                                    Mirinda Cam lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579148735000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890034" data-price="5000"
+                                        data-name="Mirinda Cam lớn">
+                                      <label class="white" for="checkbox-138-1-1579148735000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 Up" data-price="0" data-child-name="" data-child-price="" data-id="16"
+                                data-child-id="16">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/0529ce59a0c42b-4005332.png" alt="7 Up"
+                                    class="img-responsive center-block">
+                                  7 Up
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn"
+                                    data-code="1890033" data-price="5000">
+                                    7 up lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579148653000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890033" data-price="5000"
+                                        data-name="7 up lớn">
+                                      <label class="white" for="checkbox-138-1-1579148653000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Ca cao vừa" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="220" data-child-id="220">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/82650b1b8ab424-1890056_cacao.png" alt="Ca cao vừa"
+                                    class="img-responsive center-block">
+                                  Ca cao vừa
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Ca cao lớn"
+                                    data-code="1890099" data-price="15000">
+                                    Ca cao lớn + 15000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579170112000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890099" data-price="15000"
+                                        data-name="Ca cao lớn">
+                                      <label class="white" for="checkbox-138-1-1579170112000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Nước suối đóng chai" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="219" data-child-id="219">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/1ae7168550fbc1-nuocsuoi.png"
+                                    alt="Nước suối đóng chai" class="img-responsive center-block">
+                                  Nước suối đóng chai
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Trà đào (nhỏ)" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="217" data-child-id="217">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/679634345ea944-0f550a170bb756tradao.png"
+                                    alt="Trà đào (nhỏ)" class="img-responsive center-block">
+                                  Trà đào (nhỏ)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Trà đào (lớn)"
+                                    data-code="1890083" data-price="15000">
+                                    Trà đào (lớn) + 15000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579151199000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890083" data-price="15000"
+                                        data-name="Trà đào (lớn)">
+                                      <label class="white" for="checkbox-138-1-1579151199000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!--panel 3-->
+                  <div data-group="3">
+                    <div class="panel-heading panel-heading3" role="tab">
+                      <h4 class="panel-title">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-3"
+                          aria-expanded="true" aria-controls="collapseOne" 25="" class="">
+                          Add on
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-3" class="panel-collapse collapse in" role="tabpanel"
+                      aria-labelledby="headingOne" aria-expanded="true" style="">
+                      <div class="panel-body3">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Súp bí đỏ" data-price="10000" data-child-name=""
+                                data-child-price="" data-id="252" data-child-id="252">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/3fedd9a3b81327-sup.png" alt="Súp bí đỏ"
+                                    class="img-responsive center-block">
+                                  Súp bí đỏ
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="224" data-child-id="224">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b49f1bb23bb599-1890003_mirinda.png"
+                                    alt="Mirinda nhỏ - 330ml" class="img-responsive center-block">
+                                  Mirinda nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Mirinda lớn - 450ml" data-code="1890095" data-price="10000">
+                                    Mirinda lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250929000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890095" data-price="10000"
+                                        data-name="Mirinda lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250929000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 up nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="223" data-child-id="223">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/14a0814e94c7e1-1890002_7up.png"
+                                    alt="7 up nhỏ - 330ml" class="img-responsive center-block">
+                                  7 up nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn - 450ml"
+                                    data-code="1890094" data-price="10000">
+                                    7 up lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250875000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890094" data-price="10000"
+                                        data-name="7 up lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250875000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Pepsi nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="222" data-child-id="222">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/d2b67a39d10cfb-pepsi.png" alt="Pepsi nhỏ - 330ml"
+                                    class="img-responsive center-block">
+                                  Pepsi nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn - 450ml"
+                                    data-code="1890093" data-price="10000">
+                                    Pepsi lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249614000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890093" data-price="10000"
+                                        data-name="Pepsi lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579249614000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Khoai Tây Chiên (Vừa)" data-price="15000" data-child-name=""
+                                data-child-price="" data-id="221" data-child-id="221">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/c58a26e4ae5299-1860001_khoaivua.png"
+                                    alt="Khoai Tây Chiên (Vừa)" class="img-responsive center-block">
+                                  Khoai Tây Chiên (Vừa)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Khoai Tây Chiên (lớn)" data-code="1860079" data-price="20000">
+                                    Khoai Tây Chiên (lớn) + 20000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249088000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1860079" data-price="20000"
+                                        data-name="Khoai Tây Chiên (lớn)">
+                                      <label class="white" for="checkbox-138-3-1579249088000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+            
+                </div>
+                <div class="confirm">
+                  <input type="hidden" name="comboPrice" value="75000">
+                  <div class="msgChosenDishes">
+                  </div>
+                  <div class="combo-price pull-left">139.000 đ</div>
+                  <button class="pull-right btn add-to-cart combo button_custom button_custom-red" style="margin-top:10px;" id="btn-confim2" data-id="138">Đặt hàng</button>
+                </div>
+                <span class="combo-close"></span>
+              </div>
+              <span class="price" id="price2">139.000 đ</span>
+              <button class="button_custom button_custom-red" id="click_dathang2">Đặt hàng</button>
             </div>
-            <div class="select_food col-sm-4 border_bottom">
-              <img
+            <div class="select_food col-sm-4 border_bottom select_01 last-elem-100"  id="select_food_3">
+              <div>
+                
+                <img
                 src="../img/anhwebjollibee/combo3.jpg"
                 alt="không hiển thị"
                 width="268px"
@@ -333,38 +897,691 @@
                 02 GÀ GIÒN VUI VẺ + 02 MỲ Ý SỐT BÒ BẰM + 01 KHOAI TÂY CHIÊN VỪA
                 + 2 LY PEPSI VỪA
               </h3>
-              <span class="price">139.000 đ</span>
-              <button class="button_custom button_custom-red">Đặt hàng</button>
+            </div>
+              <div class="combo-container style-2 hidden" style="z-index: 9999;" id="panel_3">
+                <div class="panel-group" id="accordion_dish_138" role="tablist" aria-multiselectable="true">
+                  <!--panel 1-->
+                  <div data-group="1">
+                    <div class="panel-heading " role="tab">
+                      <h4 class="panel-title1">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-1"
+                          aria-expanded="true" aria-controls="collapseOne" 12="">
+                          Upsize Nước
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-1" class="panel-collapse collapse  in " role="tabpanel"
+                      aria-labelledby="headingOne">
+                      <div class="panel-body1">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Pepsi" data-price="0" data-child-name="" data-child-price=""
+                                data-id="191" data-child-id="191">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/ecfce3ec7ca3b3-9ae9100a4fec658885746d2293b05.png"
+                                    alt="Pepsi" class="img-responsive center-block">
+                                  Pepsi
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn"
+                                    data-code="1890032" data-price="5000">
+                                    Pepsi lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579140539000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890032" data-price="5000"
+                                        data-name="Pepsi lớn">
+                                      <label class="white" for="checkbox-138-1-1579140539000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda" data-price="0" data-child-name="" data-child-price=""
+                                data-id="182" data-child-id="182">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b092f57fb78aeb-a7de88025cf7f67.png" alt="Mirinda"
+                                    class="img-responsive center-block">
+                                  Mirinda
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Mirinda Cam lớn"
+                                    data-code="1890034" data-price="5000">
+                                    Mirinda Cam lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579148735000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890034" data-price="5000"
+                                        data-name="Mirinda Cam lớn">
+                                      <label class="white" for="checkbox-138-1-1579148735000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 Up" data-price="0" data-child-name="" data-child-price="" data-id="16"
+                                data-child-id="16">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/0529ce59a0c42b-4005332.png" alt="7 Up"
+                                    class="img-responsive center-block">
+                                  7 Up
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn"
+                                    data-code="1890033" data-price="5000">
+                                    7 up lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579148653000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890033" data-price="5000"
+                                        data-name="7 up lớn">
+                                      <label class="white" for="checkbox-138-1-1579148653000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Ca cao vừa" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="220" data-child-id="220">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/82650b1b8ab424-1890056_cacao.png" alt="Ca cao vừa"
+                                    class="img-responsive center-block">
+                                  Ca cao vừa
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Ca cao lớn"
+                                    data-code="1890099" data-price="15000">
+                                    Ca cao lớn + 15000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579170112000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890099" data-price="15000"
+                                        data-name="Ca cao lớn">
+                                      <label class="white" for="checkbox-138-1-1579170112000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Nước suối đóng chai" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="219" data-child-id="219">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/1ae7168550fbc1-nuocsuoi.png"
+                                    alt="Nước suối đóng chai" class="img-responsive center-block">
+                                  Nước suối đóng chai
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Trà đào (nhỏ)" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="217" data-child-id="217">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/679634345ea944-0f550a170bb756tradao.png"
+                                    alt="Trà đào (nhỏ)" class="img-responsive center-block">
+                                  Trà đào (nhỏ)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Trà đào (lớn)"
+                                    data-code="1890083" data-price="15000">
+                                    Trà đào (lớn) + 15000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579151199000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890083" data-price="15000"
+                                        data-name="Trà đào (lớn)">
+                                      <label class="white" for="checkbox-138-1-1579151199000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <!--panel 3-->
+                  <div data-group="3">
+                    <div class="panel-heading panel-heading3" role="tab">
+                      <h4 class="panel-title">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-3"
+                          aria-expanded="true" aria-controls="collapseOne" 25="" class="">
+                          Add on
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-3" class="panel-collapse collapse in" role="tabpanel"
+                      aria-labelledby="headingOne" aria-expanded="true" style="">
+                      <div class="panel-body3">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Súp bí đỏ" data-price="10000" data-child-name=""
+                                data-child-price="" data-id="252" data-child-id="252">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/3fedd9a3b81327-sup.png" alt="Súp bí đỏ"
+                                    class="img-responsive center-block">
+                                  Súp bí đỏ
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="224" data-child-id="224">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b49f1bb23bb599-1890003_mirinda.png"
+                                    alt="Mirinda nhỏ - 330ml" class="img-responsive center-block">
+                                  Mirinda nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Mirinda lớn - 450ml" data-code="1890095" data-price="10000">
+                                    Mirinda lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250929000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890095" data-price="10000"
+                                        data-name="Mirinda lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250929000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 up nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="223" data-child-id="223">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/14a0814e94c7e1-1890002_7up.png"
+                                    alt="7 up nhỏ - 330ml" class="img-responsive center-block">
+                                  7 up nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn - 450ml"
+                                    data-code="1890094" data-price="10000">
+                                    7 up lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250875000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890094" data-price="10000"
+                                        data-name="7 up lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250875000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Pepsi nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="222" data-child-id="222">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/d2b67a39d10cfb-pepsi.png" alt="Pepsi nhỏ - 330ml"
+                                    class="img-responsive center-block">
+                                  Pepsi nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn - 450ml"
+                                    data-code="1890093" data-price="10000">
+                                    Pepsi lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249614000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890093" data-price="10000"
+                                        data-name="Pepsi lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579249614000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Khoai Tây Chiên (Vừa)" data-price="15000" data-child-name=""
+                                data-child-price="" data-id="221" data-child-id="221">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/c58a26e4ae5299-1860001_khoaivua.png"
+                                    alt="Khoai Tây Chiên (Vừa)" class="img-responsive center-block">
+                                  Khoai Tây Chiên (Vừa)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Khoai Tây Chiên (lớn)" data-code="1860079" data-price="20000">
+                                    Khoai Tây Chiên (lớn) + 20000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249088000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1860079" data-price="20000"
+                                        data-name="Khoai Tây Chiên (lớn)">
+                                      <label class="white" for="checkbox-138-3-1579249088000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+            
+                </div>
+                <div class="confirm">
+                  <input type="hidden" name="comboPrice" value="75000">
+                  <div class="msgChosenDishes">
+                  </div>
+                  <div class="combo-price pull-left">139.000 đ</div>
+                  <button class="pull-right btn add-to-cart combo  combo button_custom button_custom-red" style="margin-top:10px;" id="btn-confim3" data-id="138">Đặt hàng</button>
+                </div>
+                <span class="combo-close"></span>
+              </div>
+              <span class="price" id="price3">139.000 đ</span>
+              <button class="button_custom button_custom-red" id="click_dathang3">Đặt hàng</button>
             </div>
           </div>
           <div class="row">
-            <div class="select_food col-sm-4 border_right">
-              <img
-                src="../img/anhwebjollibee/combo4.jpg"
-                alt="không hiển thị"
-                width="268px"
-                height="268px"
-              />
-              <h3>
-                03 GÀ GIÒN VUI VẺ + 02 MỲ Ý SỐT BÒ BẰM + 01 KHOAI BBQ VỪA + 03
-                LY PEPSI VỪA
-              </h3>
-              <span class="price">179.000 đ</span>
-              <button class="button_custom button_custom-red">Đặt hàng</button>
+            <div class="select_food col-sm-4 border_right select_02" id="select_food_4">
+             <div>
+
+               <img
+               src="../img/anhwebjollibee/combo4.jpg"
+               alt="không hiển thị"
+               width="268px"
+               height="268px"
+               />
+               <h3>
+                 03 GÀ GIÒN VUI VẺ + 02 MỲ Ý SỐT BÒ BẰM + 01 KHOAI BBQ VỪA + 03
+                 LY PEPSI VỪA
+                </h3>
+              </div>
+              <div class="combo-container style-2 hidden" style="z-index: 9999;"  id="panel_4">
+                <div class="panel-group" id="accordion_dish_138" role="tablist" aria-multiselectable="true">
+                  <!--panel 1-->
+                  <div data-group="1">
+                    <div class="panel-heading " role="tab">
+                      <h4 class="panel-title1">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-1"
+                          aria-expanded="true" aria-controls="collapseOne" 12="">
+                          Upsize Nước
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-1" class="panel-collapse collapse  in " role="tabpanel"
+                      aria-labelledby="headingOne">
+                      <div class="panel-body1">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Pepsi" data-price="0" data-child-name="" data-child-price=""
+                                data-id="191" data-child-id="191">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/ecfce3ec7ca3b3-9ae9100a4fec658885746d2293b05.png"
+                                    alt="Pepsi" class="img-responsive center-block">
+                                  Pepsi
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn"
+                                    data-code="1890032" data-price="5000">
+                                    Pepsi lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579140539000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890032" data-price="5000"
+                                        data-name="Pepsi lớn">
+                                      <label class="white" for="checkbox-138-1-1579140539000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda" data-price="0" data-child-name="" data-child-price=""
+                                data-id="182" data-child-id="182">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b092f57fb78aeb-a7de88025cf7f67.png" alt="Mirinda"
+                                    class="img-responsive center-block">
+                                  Mirinda
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Mirinda Cam lớn"
+                                    data-code="1890034" data-price="5000">
+                                    Mirinda Cam lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579148735000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890034" data-price="5000"
+                                        data-name="Mirinda Cam lớn">
+                                      <label class="white" for="checkbox-138-1-1579148735000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 Up" data-price="0" data-child-name="" data-child-price="" data-id="16"
+                                data-child-id="16">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/0529ce59a0c42b-4005332.png" alt="7 Up"
+                                    class="img-responsive center-block">
+                                  7 Up
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn"
+                                    data-code="1890033" data-price="5000">
+                                    7 up lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579148653000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890033" data-price="5000"
+                                        data-name="7 up lớn">
+                                      <label class="white" for="checkbox-138-1-1579148653000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Ca cao vừa" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="220" data-child-id="220">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/82650b1b8ab424-1890056_cacao.png" alt="Ca cao vừa"
+                                    class="img-responsive center-block">
+                                  Ca cao vừa
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Ca cao lớn"
+                                    data-code="1890099" data-price="15000">
+                                    Ca cao lớn + 15000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579170112000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890099" data-price="15000"
+                                        data-name="Ca cao lớn">
+                                      <label class="white" for="checkbox-138-1-1579170112000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Nước suối đóng chai" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="219" data-child-id="219">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/1ae7168550fbc1-nuocsuoi.png"
+                                    alt="Nước suối đóng chai" class="img-responsive center-block">
+                                  Nước suối đóng chai
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Trà đào (nhỏ)" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="217" data-child-id="217">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/679634345ea944-0f550a170bb756tradao.png"
+                                    alt="Trà đào (nhỏ)" class="img-responsive center-block">
+                                  Trà đào (nhỏ)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Trà đào (lớn)"
+                                    data-code="1890083" data-price="15000">
+                                    Trà đào (lớn) + 15000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579151199000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890083" data-price="15000"
+                                        data-name="Trà đào (lớn)">
+                                      <label class="white" for="checkbox-138-1-1579151199000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <!--panel 3-->
+                  <div data-group="3">
+                    <div class="panel-heading panel-heading3" role="tab">
+                      <h4 class="panel-title">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-3"
+                          aria-expanded="true" aria-controls="collapseOne" 25="" class="">
+                          Add on
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-3" class="panel-collapse collapse in" role="tabpanel"
+                      aria-labelledby="headingOne" aria-expanded="true" style="">
+                      <div class="panel-body3">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Súp bí đỏ" data-price="10000" data-child-name=""
+                                data-child-price="" data-id="252" data-child-id="252">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/3fedd9a3b81327-sup.png" alt="Súp bí đỏ"
+                                    class="img-responsive center-block">
+                                  Súp bí đỏ
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="224" data-child-id="224">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b49f1bb23bb599-1890003_mirinda.png"
+                                    alt="Mirinda nhỏ - 330ml" class="img-responsive center-block">
+                                  Mirinda nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Mirinda lớn - 450ml" data-code="1890095" data-price="10000">
+                                    Mirinda lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250929000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890095" data-price="10000"
+                                        data-name="Mirinda lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250929000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 up nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="223" data-child-id="223">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/14a0814e94c7e1-1890002_7up.png"
+                                    alt="7 up nhỏ - 330ml" class="img-responsive center-block">
+                                  7 up nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn - 450ml"
+                                    data-code="1890094" data-price="10000">
+                                    7 up lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250875000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890094" data-price="10000"
+                                        data-name="7 up lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250875000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Pepsi nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="222" data-child-id="222">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/d2b67a39d10cfb-pepsi.png" alt="Pepsi nhỏ - 330ml"
+                                    class="img-responsive center-block">
+                                  Pepsi nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn - 450ml"
+                                    data-code="1890093" data-price="10000">
+                                    Pepsi lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249614000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890093" data-price="10000"
+                                        data-name="Pepsi lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579249614000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Khoai Tây Chiên (Vừa)" data-price="15000" data-child-name=""
+                                data-child-price="" data-id="221" data-child-id="221">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/c58a26e4ae5299-1860001_khoaivua.png"
+                                    alt="Khoai Tây Chiên (Vừa)" class="img-responsive center-block">
+                                  Khoai Tây Chiên (Vừa)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Khoai Tây Chiên (lớn)" data-code="1860079" data-price="20000">
+                                    Khoai Tây Chiên (lớn) + 20000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249088000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1860079" data-price="20000"
+                                        data-name="Khoai Tây Chiên (lớn)">
+                                      <label class="white" for="checkbox-138-3-1579249088000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+            
+                </div>
+                <div class="confirm">
+                  <input type="hidden" name="comboPrice" value="75000">
+                  <div class="msgChosenDishes">
+                  </div>
+                  <div class="combo-price pull-left">179.000 đ</div>
+                  <button class="pull-right btn add-to-cart combo  button_custom button_custom-red" style="margin-top:10px;" id="btn-confim4" data-id="138">Đặt hàng</button>
+                </div>
+                <span class="combo-close"></span>
+              </div>
+              <span class="price"  id="price4">179.000 đ</span>
+              <button class="button_custom button_custom-red" id="click_dathang4">Đặt hàng</button>
             </div>
-            <div class="select_food col-sm-4 border_right">
-              <img
+            <div class="select_food col-sm-4 border_right select_02"  id="select_food_5">
+              <div>
+
+                <img
                 src="../img/anhwebjollibee/combo5.jpg"
                 alt="không hiển thị"
                 width="268px"
                 height="268px"
-              />
-              <h3>
-                01 MIẾNG GÀ GIÒN VUI VẺ + 01 MỲ Ý SỐT BÒ BẰM + 01 NƯỚC NGỌT
-                (VỪA)
-              </h3>
-              <span class="price">65.000 đ</span>
-              <button class="button_custom button_custom-red">Đặt hàng</button>
+                />
+                <h3>
+                  01 MIẾNG GÀ GIÒN VUI VẺ + 01 MỲ Ý SỐT BÒ BẰM + 01 NƯỚC NGỌT
+                  (VỪA)
+                </h3>
+              </div>
+              <div class="combo-container style-2 hidden" style="z-index: 9999;" id="panel_5">
+                <div class="panel-group" id="accordion_dish_138" role="tablist" aria-multiselectable="true">
+                  <!--panel 3-->
+                  <div data-group="3">
+                    <div class="panel-heading panel-heading3" role="tab">
+                      <h4 class="panel-title">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-3"
+                          aria-expanded="true" aria-controls="collapseOne" 25="" class="">
+                          Add on
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-3" class="panel-collapse collapse in" role="tabpanel"
+                      aria-labelledby="headingOne" aria-expanded="true" style="">
+                      <div class="panel-body3">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Súp bí đỏ" data-price="10000" data-child-name=""
+                                data-child-price="" data-id="252" data-child-id="252">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/3fedd9a3b81327-sup.png" alt="Súp bí đỏ"
+                                    class="img-responsive center-block">
+                                  Súp bí đỏ
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="224" data-child-id="224">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b49f1bb23bb599-1890003_mirinda.png"
+                                    alt="Mirinda nhỏ - 330ml" class="img-responsive center-block">
+                                  Mirinda nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Mirinda lớn - 450ml" data-code="1890095" data-price="10000">
+                                    Mirinda lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250929000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890095" data-price="10000"
+                                        data-name="Mirinda lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250929000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 up nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="223" data-child-id="223">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/14a0814e94c7e1-1890002_7up.png"
+                                    alt="7 up nhỏ - 330ml" class="img-responsive center-block">
+                                  7 up nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn - 450ml"
+                                    data-code="1890094" data-price="10000">
+                                    7 up lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250875000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890094" data-price="10000"
+                                        data-name="7 up lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250875000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Pepsi nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="222" data-child-id="222">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/d2b67a39d10cfb-pepsi.png" alt="Pepsi nhỏ - 330ml"
+                                    class="img-responsive center-block">
+                                  Pepsi nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn - 450ml"
+                                    data-code="1890093" data-price="10000">
+                                    Pepsi lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249614000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890093" data-price="10000"
+                                        data-name="Pepsi lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579249614000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Khoai Tây Chiên (Vừa)" data-price="15000" data-child-name=""
+                                data-child-price="" data-id="221" data-child-id="221">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/c58a26e4ae5299-1860001_khoaivua.png"
+                                    alt="Khoai Tây Chiên (Vừa)" class="img-responsive center-block">
+                                  Khoai Tây Chiên (Vừa)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Khoai Tây Chiên (lớn)" data-code="1860079" data-price="20000">
+                                    Khoai Tây Chiên (lớn) + 20000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249088000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1860079" data-price="20000"
+                                        data-name="Khoai Tây Chiên (lớn)">
+                                      <label class="white" for="checkbox-138-3-1579249088000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="confirm">
+                  <input type="hidden" name="comboPrice" value="75000">
+                  <div class="msgChosenDishes">
+                  </div>
+                  <div class="combo-price pull-left">65.000 đ</div>
+                  <button class="pull-right btn add-to-cart combo button_custom button_custom-red" style="margin-top:10px;" id="btn-confim5" data-id="138">Đặt hàng</button>
+                </div>
+                <span class="combo-close"></span>
+              </div>
+              <span class="price"  id="price5">65.000 đ</span>
+              <button class="button_custom button_custom-red" id="click_dathang5">Đặt hàng</button>
             </div>
           </div>
         </div>
@@ -382,6 +1599,307 @@
                 03 GÀ GIÒN VUI VẺ + 01 MỲ Ý SỐT BÒ BẰM + 01 KHOAI TÂY CHIÊN VỪA
                 + 2 LY PEPSI VỪA
               </h3>
+              <div class="combo-container style-2 hidden " style="z-index: 9999;" id="panel_1">
+                <div class="panel-group" id="accordion_dish_138" role="tablist" aria-multiselectable="true">
+                  <!--panel 1-->
+                  <div data-group="1">
+                    <div class="panel-heading " role="tab">
+                      <h4 class="panel-title1">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-1"
+                          aria-expanded="true" aria-controls="collapseOne" 12="">
+                          Upsize Nước
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-1" class="panel-collapse collapse  in upsize1" role="tabpanel"
+                      aria-labelledby="headingOne">
+                      <div class="panel-body1">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Pepsi" data-price="0" data-child-name="" data-child-price=""
+                                data-id="191" data-child-id="191">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/ecfce3ec7ca3b3-9ae9100a4fec658885746d2293b05.png"
+                                    alt="Pepsi" class="img-responsive center-block">
+                                  Pepsi
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn"
+                                    data-code="1890032" data-price="5000">
+                                    Pepsi lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579140539000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890032" data-price="5000"
+                                        data-name="Pepsi lớn">
+                                      <label class="white" for="checkbox-138-1-1579140539000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda" data-price="0" data-child-name="" data-child-price=""
+                                data-id="182" data-child-id="182">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b092f57fb78aeb-a7de88025cf7f67.png" alt="Mirinda"
+                                    class="img-responsive center-block">
+                                  Mirinda
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Mirinda Cam lớn"
+                                    data-code="1890034" data-price="5000">
+                                    Mirinda Cam lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579148735000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890034" data-price="5000"
+                                        data-name="Mirinda Cam lớn">
+                                      <label class="white" for="checkbox-138-1-1579148735000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 Up" data-price="0" data-child-name="" data-child-price="" data-id="16"
+                                data-child-id="16">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/0529ce59a0c42b-4005332.png" alt="7 Up"
+                                    class="img-responsive center-block">
+                                  7 Up
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn"
+                                    data-code="1890033" data-price="5000">
+                                    7 up lớn + 5000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579148653000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890033" data-price="5000"
+                                        data-name="7 up lớn">
+                                      <label class="white" for="checkbox-138-1-1579148653000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Ca cao vừa" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="220" data-child-id="220">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/82650b1b8ab424-1890056_cacao.png" alt="Ca cao vừa"
+                                    class="img-responsive center-block">
+                                  Ca cao vừa
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Ca cao lớn"
+                                    data-code="1890099" data-price="15000">
+                                    Ca cao lớn + 15000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579170112000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890099" data-price="15000"
+                                        data-name="Ca cao lớn">
+                                      <label class="white" for="checkbox-138-1-1579170112000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Nước suối đóng chai" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="219" data-child-id="219">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/1ae7168550fbc1-nuocsuoi.png"
+                                    alt="Nước suối đóng chai" class="img-responsive center-block">
+                                  Nước suối đóng chai
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Trà đào (nhỏ)" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="217" data-child-id="217">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/679634345ea944-0f550a170bb756tradao.png"
+                                    alt="Trà đào (nhỏ)" class="img-responsive center-block">
+                                  Trà đào (nhỏ)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Trà đào (lớn)"
+                                    data-code="1890083" data-price="15000">
+                                    Trà đào (lớn) + 15000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-1-1579151199000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890083" data-price="15000"
+                                        data-name="Trà đào (lớn)">
+                                      <label class="white" for="checkbox-138-1-1579151199000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--panel 2-->
+                  <div data-group="2">
+                    <div class="panel-heading panel-heading2" role="tab">
+                      <h4 class="panel-title">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-2"
+                          aria-expanded="true" aria-controls="collapseOne" 17="" class="">
+                          Đổi khoai
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-2" class="panel-collapse collapse in" role="tabpanel"
+                      aria-labelledby="headingOne" aria-expanded="true" style="">
+                      <div class="panel-body2">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Khoai tây lắc vị BBQ (lớn)" data-price="15000"
+                                data-child-name="" data-child-price="" data-id="246" data-child-id="246">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/555a95d0659ee4-khoai1.png"
+                                    alt="Khoai tây lắc vị BBQ (lớn)" class="img-responsive center-block">
+                                  Khoai tây lắc vị BBQ (lớn)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Khoai tây lớn" data-price="10000" data-child-name="" data-child-price=""
+                                data-id="245" data-child-id="245">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/3ddcbd6eb76526-kt.png" alt="Khoai tây lớn"
+                                    class="img-responsive center-block">
+                                  Khoai tây lớn
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--panel 3-->
+                  <div data-group="3">
+                    <div class="panel-heading panel-heading3" role="tab">
+                      <h4 class="panel-title">
+                        <a role="button" data-bs-toggle="collapse" data-parent="#accordion_dish_138" href="#collapse_instance-138-3"
+                          aria-expanded="true" aria-controls="collapseOne" 25="" class="">
+                          Add on
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_instance-138-3" class="panel-collapse collapse in" role="tabpanel"
+                      aria-labelledby="headingOne" aria-expanded="true" style="">
+                      <div class="panel-body3">
+                        <div class="wrapper">
+                          <div class="extra-group-wrapper" style="width: 100%">
+                            <ul class="list-thumb-left extra-group">
+                              <li class="item  active1  " data-name="Súp bí đỏ" data-price="10000" data-child-name=""
+                                data-child-price="" data-id="252" data-child-id="252">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/3fedd9a3b81327-sup.png" alt="Súp bí đỏ"
+                                    class="img-responsive center-block">
+                                  Súp bí đỏ
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Mirinda nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="224" data-child-id="224">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/b49f1bb23bb599-1890003_mirinda.png"
+                                    alt="Mirinda nhỏ - 330ml" class="img-responsive center-block">
+                                  Mirinda nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Mirinda lớn - 450ml" data-code="1890095" data-price="10000">
+                                    Mirinda lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250929000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890095" data-price="10000"
+                                        data-name="Mirinda lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250929000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="7 up nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="223" data-child-id="223">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/14a0814e94c7e1-1890002_7up.png"
+                                    alt="7 up nhỏ - 330ml" class="img-responsive center-block">
+                                  7 up nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="7 up lớn - 450ml"
+                                    data-code="1890094" data-price="10000">
+                                    7 up lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579250875000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890094" data-price="10000"
+                                        data-name="7 up lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579250875000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Pepsi nhỏ - 330ml" data-price="5000" data-child-name=""
+                                data-child-price="" data-id="222" data-child-id="222">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/d2b67a39d10cfb-pepsi.png" alt="Pepsi nhỏ - 330ml"
+                                    class="img-responsive center-block">
+                                  Pepsi nhỏ - 330ml
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;" data-name="Pepsi lớn - 450ml"
+                                    data-code="1890093" data-price="10000">
+                                    Pepsi lớn - 450ml + 10000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249614000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1890093" data-price="10000"
+                                        data-name="Pepsi lớn - 450ml">
+                                      <label class="white" for="checkbox-138-3-1579249614000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="item  " data-name="Khoai Tây Chiên (Vừa)" data-price="15000" data-child-name=""
+                                data-child-price="" data-id="221" data-child-id="221">
+                                <div class="combo-title" style="width: 50%; float: left;">
+                                  <img src="https://jollibee.com.vn/uploads/dish/c58a26e4ae5299-1860001_khoaivua.png"
+                                    alt="Khoai Tây Chiên (Vừa)" class="img-responsive center-block">
+                                  Khoai Tây Chiên (Vừa)
+                                </div>
+                                <div class="change-options attributes" style="width: 50%; float: right; position: relative;">
+                                  <p class="change-size-wrapper attribute" style="margin-bottom:10px;"
+                                    data-name="Khoai Tây Chiên (lớn)" data-code="1860079" data-price="20000">
+                                    Khoai Tây Chiên (lớn) + 20000
+                                    <span class="checkbox" style="position: absolute; right: 0; float: none;">
+                                      <input id="checkbox-138-3-1579249088000" class="change-size" type="checkbox"
+                                        autocomplete="off" name="checkbox-138" data-code="1860079" data-price="20000"
+                                        data-name="Khoai Tây Chiên (lớn)">
+                                      <label class="white" for="checkbox-138-3-1579249088000"></label>
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+            
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+            
+                </div>
+                <div class="confirm">
+                  <input type="hidden" name="comboPrice" value="149000">
+                  <div class="msgChosenDishes">
+                  </div>
+                  <div class="combo-price pull-left">149.000 đ</div>
+                  <button class="pull-right btn add-to-cart combo button_custom button_custom-red" id="btn-confim2" style="margin-top:10px;" data-id="138">Đặt hàng</button>
+                </div>
+                <span class="combo-close"></span>
+              </div>
               <span class="price">149.000 đ</span>
               <button class="button_custom button_custom-red">Đặt hàng</button>
             </div>
@@ -398,7 +1916,7 @@
               <span class="price">139.000 đ</span>
               <button class="button_custom button_custom-red">Đặt hàng</button>
             </div>
-            <div class="select_food col-sm-4 border_bottom">
+            <div class="select_food col-sm-4 border_bottom last-elem-100">
               <img
                 src="../img/anhwebjollibee/2miengga.png"
                 alt="không hiển thị"
@@ -439,7 +1957,7 @@
               <span class="price">65.000 đ</span>
               <button class="button_custom button_custom-red">Đặt hàng</button>
             </div>
-            <div class="select_food col-sm-4 border_bottom">
+            <div class="select_food col-sm-4 border_bottom last-elem-100">
               <img
                 src="../img/anhwebjollibee/comgagion.png"
                 alt="không hiển thị"
@@ -479,7 +1997,7 @@
               <span class="price">65.000 đ</span>
               <button class="button_custom button_custom-red">Đặt hàng</button>
             </div>
-            <div class="select_food col-sm-4 border_bottom">
+            <div class="select_food col-sm-4 border_bottom last-elem-100">
               <img
                 src="../img/anhwebjollibee/gagion8.png"
                 alt="không hiển thị"
@@ -551,7 +2069,7 @@
             <span class="price">45.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/sgsotcay.png"
               alt="không hiển thị"
@@ -592,7 +2110,7 @@
             <span class="price">50.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/comsot.png"
               alt="không hiển thị"
@@ -663,7 +2181,7 @@
             <span class="price">75.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/hmm.png"
               alt="không hiển thị"
@@ -704,7 +2222,7 @@
             <span class="price">75.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/mykhoaitay.png"
               alt="không hiển thị"
@@ -745,7 +2263,7 @@
             <span class="price">80.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/ki.png"
               alt="không hiển thị"
@@ -786,7 +2304,7 @@
           <span class="price">50.000 đ</span>
           <button class="button_custom button_custom-red">Đặt hàng</button>
         </div>
-        <div class="select_food col-sm-4 border_bottom">
+        <div class="select_food col-sm-4 border_bottom last-elem-100">
           <img
             src="../img/anhwebjollibee/hghg.png"
             alt="không hiển thị"
@@ -858,7 +2376,7 @@
             <span class="price">50.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/nuong.png"
               alt="không hiển thị"
@@ -899,7 +2417,7 @@
             <span class="price">30.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 ">
+          <div class="select_food col-sm-4 last-elem-100">
             <img
               src="../img/anhwebjollibee/new.png"
               alt="không hiển thị"
@@ -944,7 +2462,7 @@
             <span class="price">25.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/khoaitaychien.png"
               alt="không hiển thị"
@@ -985,7 +2503,7 @@
             <span class="price">25.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/khoailaclon.png"
               alt="không hiển thị"
@@ -1027,7 +2545,7 @@
             <span class="price">15.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 ">
+          <div class="select_food col-sm-4 last-elem-100">
             <img
               src="../img/anhwebjollibee/comtrang.png"
               alt="không hiển thị"
@@ -1073,7 +2591,7 @@
             <span class="price">15.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/banhkhoaimon.png"
               alt="không hiển thị"
@@ -1114,7 +2632,7 @@
             <span class="price">15.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/ocque.png"
               alt="không hiển thị"
@@ -1155,7 +2673,7 @@
             <span class="price">15.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/tradaolon.png"
               alt="không hiển thị"
@@ -1196,7 +2714,7 @@
             <span class="price">23.000 đ</span>
             <button class="button_custom button_custom-red">Đặt hàng</button>
           </div>
-          <div class="select_food col-sm-4 border_bottom">
+          <div class="select_food col-sm-4 border_bottom last-elem-100">
             <img
               src="../img/anhwebjollibee/pepnho.png"
               alt="không hiển thị"
@@ -1294,8 +2812,37 @@
         </div>
       </div>
       </div>
+      </div>
     </main>
-    <footer class="container-fluid footer thucdon_footer">
+
+    <div id="order-bar" class="row ng-scope scroll-to-fixed-fixed">
+      <div class="order-toggle hide-active text-center">
+        <i class="fa-solid fa-cart-shopping fa_01"></i>
+        <span class="text_price">0 đ</span>
+      </div>
+    </div>
+    <div id="order-bar2" class="row ng-scope scroll-to-fixed-fixed hidden">
+      <div class="order-bar2-top">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div id="list-order">
+      </div>
+      <div id="list-order2">
+      </div>
+      <div id="list-order3">
+      </div>
+      <div id="list-order4">
+      </div>
+      <div id="list-order5">
+      </div>
+      <!-- <div id="sum-order">
+
+      </div> -->
+      <div class="d-flex justify-content-center ">
+        <a class="d-block text-center w-50 button_custom button_custom-red fs-3" href="./Thanhtoan.html">Thanh Toán</a>
+      </div>
+    </div>
+    <footer class="container-fluid footer thucdon_footer ">
       <div class="footer-img">
         <a href="" class="footer-img__logo">
           <img class="img-responsive" src="./img/LogoJB_New-02.png" alt="">
