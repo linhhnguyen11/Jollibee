@@ -4,6 +4,11 @@
     --witdh-img: 100%;
 }
 
+@font-face {
+    font-family: MergeBlack;
+    src: url("../Font/MergeBlack.woff");
+}
+
 * {
     box-sizing: inherit;
 }
@@ -11,12 +16,12 @@
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: "MergeBlack";
     box-sizing: border-box;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
+    /* font-family: "MergeBlack"; */
     margin: 0;
 }
 
@@ -42,6 +47,8 @@ input:focus {
 }
 
 .btn-default {
+    display: inline-block;
+    font-family: "MergeBlack";
     position: relative;
     border: none;
     text-align: center;
@@ -51,7 +58,6 @@ input:focus {
     border: 1px solid transparent;
     overflow: hidden;
     padding: 6px 12px;
-    font-weight: 800;
     background-color: #e31c3d;
     transition: all 0.2s linear ;
 
@@ -179,19 +185,20 @@ input:focus {
 
 .navbar-list {
     margin-top: 7.8px;
-    font-size: 12px;
+    font-size: 13px;
     margin-right: 40px;
     position: relative; 
     margin-left: 28px;
 }
 
 .navbar-item > a {
+    font-family: "MergeBlack";
     display: block;
     padding: 13px 5px;
     border-radius: 10px 10px 0 0;
     color: var(--white-color);
-    font-weight: 800;
     margin: 0 5.5px;
+    white-space: nowrap;
 }
 .navbar-list .navbar-item:hover .navbar-link{
     color: #950E08;
@@ -201,13 +208,13 @@ input:focus {
 
 .navbar-link {
     display: block;
-    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-    font-size: var(--bs-nav-link-font-size);
-    font-weight: var(--bs-nav-link-font-weight);
-    font-weight: 700;
-    color: var(--bs-nav-link-color);
-    text-decoration: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  font-weight: 700;
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 .navbar-nav .navbar-link.active {
@@ -258,7 +265,7 @@ input:focus {
 .menu-item h5 {
     color: #411e10;
     font-size: 1.1rem;
-    font-weight: 800;
+    font-family: "MergeBlack";
 }
 
 .menu-list li:hover .menulist-img {
@@ -364,7 +371,7 @@ input:focus {
 
 .text-uppercase {
     font-size: 19px;
-    font-weight: 800;
+    font-family: "MergeBlack";
 }
 .footer-icon {
     display: inline-block;
@@ -461,7 +468,7 @@ input:focus {
 
 .modal__inner p {
     font-size: 24px;
-    font-weight: 800;
+    font-family: "MergeBlack";
 }
 
 .modal__inner::after {
@@ -548,6 +555,25 @@ input:focus {
 
 
 @media (max-width: 1280px) {
+    .navbar-body {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-toggler {
+        display: block;
+    }
+    .header-logo {
+        padding-left: 8px;
+        text-align: center;
+    }
+    .col-lg-2 {
+        width: 33.333333%;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-img img {
+        width: 63%;
+    }
 }
 
 @media (min-width: 768px) {

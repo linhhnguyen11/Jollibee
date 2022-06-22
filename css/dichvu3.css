@@ -1,0 +1,49 @@
+.section1{
+    background-image: url(/img/intro-bg.png);
+    background-color: #FAC437;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+}
+
+.text{
+    width: 60%;
+    padding-left: 80px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    padding-right: 40px;
+}
+.text h1{
+    font-family: MergeBlack;
+    color: white;
+    font-size: 45px;
+}
+.text p{
+    font-size: 15px;
+}
+.img1{
+    width: 648.600px;
+    height: 381.550px;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+.section2{
+    background-color: #5DC6D1;
+    display: flex;
+    padding-top: 65px;
+}
+.menu{
+    text-align: center;
+    padding-left: 227px;
+    padding-right: 355px;
+}
+.menu h2,
+.store h2{
+    font-family: MergeBlack;
+    font-size: 35px;
+    padding-top: 40px;
+    padding-bottom: 67px;
+}
+.store{
+    text-align: center;
+}

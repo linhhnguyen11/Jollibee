@@ -1,0 +1,82 @@
+.section1{
+    background-image: url(../img/pattern2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+}
+
+.text{
+    width: 60%;
+    padding-left: 170px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    padding-right: 40px;
+}
+.text h1{
+    font-family: MergeBlack;
+    color: white;
+    font-size: 45px;
+}
+.text p{
+    font-size: 15px;
+}
+.img1{
+    margin-left: 60px;
+}
+.img1{
+    width: 375px;
+    height: 412px;
+    margin-top: 50px;
+}
+.section2{
+    background-color: #FAC437;
+}
+.slide-top{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.slide2,
+.slide1{
+    background-color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;/*chinh duong vien màu trang thanh vòng cung*/
+}
+.carousel {
+    width: 100%;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    
+    background-size: 50% 50%;
+    
+    background-color: black;
+}
+.slide-bottom{
+    padding-bottom: 65px;
+}
+.main{
+    display: flex;
+}
+.pic1{
+    padding-left: 15px;
+    padding-right: 32px;
+}
+.img2{
+   border-radius: 20px;
+    width: 537px;
+    height: 395px;
+}
+
+.pic2{
+    border-radius: 20px;
+}

@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jollibee Việt Nam</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css"  type="text/css">
+    <link rel="stylesheet" href="css/dichvu.css">
     <link rel="stylesheet" href="./icon/fontawesome-free-6.0.0-beta3-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet"></head>
-    <link href="//db.onlinewebfonts.com/c/870c14ea660dc49cbcf9c92af21392af?family=Merge" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href=".//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=vietnamese">
+</head>
 <body>
   
   <div class="offcanvas offcanvas-end text-white " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label" aria-modal="false" role="dialog">
@@ -46,7 +45,7 @@
           <a class="nav-link" href="./tintuc.html">TIN TỨC</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./cuahang.html">CỬA HÀNG</a>
+          <a class="nav-link" href="#">CỬA HÀNG</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./trang-chu.html">LIÊN HỆ</a>
@@ -96,7 +95,7 @@
                     <div class="">            
                       <ul class="navbar-nav justify-content-center flex-grow-1 ">
                         <li class="navbar-item">
-                          <a class="navbar-link active" aria-current="page" href="./trang-chu.html">TRANG CHỦ</a>
+                          <a class="navbar-link " aria-current="page" href="./trang-chu.html">TRANG CHỦ</a>
                         </li>
                         <li class="navbar-item">
                           <a class="navbar-link" href="./vejollibee.html">VỀ JOLLIBEE</a>
@@ -156,19 +155,19 @@
                             <a class="navbar-link " aria-current="page" href="./khuyenmai.html">KHUYẾN MÃI</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link " aria-current="page" href="./dichvu.html">DỊCH VỤ</a>
+                            <a class="navbar-link active" aria-current="page" href="./dichvu.html">DỊCH VỤ</a>
                         </li>
                         <li class="navbar-item">
                             <a class="navbar-link " aria-current="page" href="./tintuc.html">TIN TỨC</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link " aria-current="page" href="#">CỬA HÀNG</a>
+                            <a class="navbar-link " aria-current="page" href="./cuahang.html">CỬA HÀNG</a>
                         </li>
                         <li class="navbar-item">
                             <a class="navbar-link " aria-current="page" href="./Trang_lienhe.html">LIÊN HỆ</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="navbar-link active" aria-current="page" href="./tuyendung.html">TUYỂN DỤNG</a>
+                            <a class="navbar-link " aria-current="page" href="./tuyendung.html">TUYỂN DỤNG</a>
                         </li>
                       </ul>
                 </div>
@@ -181,218 +180,86 @@
             </div>
         </div>
   </header>
-  <div class="section">
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <button class="btn-default btn-slide btn-yellow" >
-        <a href="./Thucdon.html">
-          -ĐẶT HÀNG
 
-        </a>
-      </button>
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <a href="" class="swiper-slide">
-          <img src="./img/mì ý.jpg" alt="" />
-        </a href="">
-        <a href="" class="swiper-slide">
-          <img src="./img/cặp đôi.jpg" alt="" />
-        </a href="">
-        <a href="" class="swiper-slide">
-          <img src="./img/tải app.jpg" alt="" />
-        </a href="">
-
-        <a href="" class="swiper-slide">
-          <img src="./img/măm gà giòn.jpg" alt="" />
-        </a href="">
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="today-list row">
-      <div class="today-text col-sm-3 text-center">
-        <div class="today-logo">
-          <img src="./img/logo.png" alt="">
-        </div>
-        <h3>ĂN GÌ <br> HÔM NAY</h3>
-        <p>Thực đơn Jollibee đa dạng và phong phú, có rất nhiều sự lựa chọn cho bạn, gia đình và bạn bè.</p>
-      </div>
-
-      <div class="today-menu col-sm-9">
-        <div class="menu-slider">
-          <a href="" class="menu-slider__item ">
-            <img src="./img/menugagionvuive.png" alt="">
-            <div class="menu-item__title">
-              <img src="./img/titlegagionvuive.png" alt="">
-              <button class="btn-default btn-yellow">ĐẶT HÀNG</button>
+      <section class="banner">
+        
+          <img class="img" src="./img/news.jpg" alt="">
+          <div class="banner-text">
+            <div class="banner-item text-center">
+                <h1>TIN TỨC</h1>
+                <img src="./img/popline.svg" alt="">
+                <p>TẬN HƯỞNG NHỮNG KHOẢNH KHẮC TRỌN VẸN CÙNG JOLLIBEE</p>
+                <a  href="#1">
+                  <i class="fa-solid fa-angles-down fa-2x"></i>
+                </a>
             </div>
-          </a>
-          <a href="" class="menu-slider__item ">
-            <img src="./img/menugasotcay.png" alt="">
-            <div class="menu-item__title">
-              <img src="./img/titlegasotcay.png" alt="">
-              <button class="btn-default btn-yellow">ĐẶT HÀNG</button>
-            </div>
-          </a>
-          <a href="" class="menu-slider__item ">
-            <img src="./img/menumiysotbobam.png" alt="">
-            <div class="menu-item__title">
-              <img src="./img/titlemiysotbobam.png" alt="">
-              <button class="btn-default btn-yellow">ĐẶT HÀNG</button>
-            </div>
-          </a>
-          <a href="" class="menu-slider__item ">
-            <img src="./img/exporttradao.png" alt="">
-            <div class="menu-item__title">
-              <img src="./img/montrangmieng01.png" alt="">
-              <button class="btn-default btn-yellow">ĐẶT HÀNG</button>
-            </div>
-          </a>
         </div>
-      </div>
-    </div>
+      </section>
+          
+         
+      <section class="service-entry odd shadow">
+          <div class="max-width">
+              <a id="1" class="left" href="./Thucdon.html">
+                  <img class="pic" src="/img/1.png" alt="">
+              </a>
+              <div class="right">
+                  <h4>1900 - 1533</h4>
+                  <a class="btn-default btn " href="./Thucdon.html">-Xem thêm</a>
+              </div>
+          </div>
+      </section>
 
-    <div class="service text-center row">
-      <div class="service-text">
-        <h3>DỊCH VỤ</h3>
-        <p>TẬN HƯỞNG KHOẢNH KHẮC TRỌN VẸN CÙNG JOLLIBEE</p>
-      </div>
-      <div class="service-main">
-        <div class="service-img ">
-          <a href="" class="service-item ">
-            <img src="./img/tiecsinhnhat.png" alt="">
+      <section class="service-entry even shadow">
+        <div class="max-width">
+          <a class="left" href="./dichvu1.html">
+            <img class="pic1" src="./img/2.png" alt="">
           </a>
-          <div class="service-body">
-            <h3>ĐẶT TIỆC SINH NHẬT</h3>
-            <button class="btn-default btn-red btn-change">
-              <a href="./dichvu1.html">XEM THÊM</a>
-            </button>
+          <div class="right">
+            <h4>
+              <a class="color1" href="./dichvu1.html">Đặt tiệc sinh nhật</a>
+            </h4>
+            <p>Bạn đang tìm ý tưởng cho một buổi tiệc sinh nhật thật đặc biệt dành cho con của bạn? Hãy chọn những bữa tiệc của Jollibee. Sẽ có nhiều điều vui nhộn và rất đáng nhớ dành cho con của bạn.      
+            </p>
+            <a class="btn-default btn" href="./dichvu1.html">Xem thêm</a>
           </div>
         </div>
-        <div class="service-img ">
-          <a href="" class="service-item ">
-            <img src="./img/kidclud.png" alt="">
+      </section>
+
+      <section class="service-entry odd shadow">
+        <div class="max-width">
+          <a class="left" href="./dichvu2.html">
+            <img class="pic2" src="./img/3.png" alt="">
           </a>
-          <div class="service-body">
-            <h3>JOLLIBEE KID CLUB</h3>
-            <button class="btn-default btn-red btn-change">
-              <a href="./dichvu2.html">XEM THÊM</a>
-            </button>
+          <div class="right">
+            <h4>
+              <a class="color2" href="./dichvu2.html">jollibee kid club</a>
+            </h4>
+            <p>
+              Hãy để con bạn thoả thích thể hiện và khám phá tài năng bên trong của mình cùng cơ hội gặp gỡ những bạn đồng lứa khác tại Jollibee Kids Club. Cùng tìm hiểu thêm thông tin về Jollibee Kids Club và tham gia ngay.
+            </p>
+            <a class="btn-default btn" href="./dichvu2.html">Xem thêm</a>
           </div>
-        </div>
-        <div class="service-img ">
-          <a href="" class="service-item ">
-            <img src="./img/donhanglon.png" alt="">
+        </div>       
+      </section>
+
+      <section class="service-entry even shadow">
+        <div class="max-width">
+          <a class="left" href="./dichvu3.html">
+            <img class="pic3" src="./img/4.png" alt="">
           </a>
-          <div class="service-body">
-            <h3>ĐƠN HÀNG LỚN</h3>
-            <button class="btn-default btn-red btn-change">
-              <a href="./dichvu3.html">XEM THÊM</a>
-            </button>
+          <div class="right">
+            <h4>
+              <a class="color3" href="./dichvu3.html">Đơn hàng lớn</a>
+            </h4>
+            <p>
+              Để phục vụ sở thích quây quần cùng gia đình và bạn bè, chương trình chiết khấu hấp dẫn dành cho những đơn hàng lớn đã ra đời để đem đến những lựa chọn tiện lợi hơn cho bạn. Liên hệ ngay với cửa hàng gần nhất để được phục vụ.
+            </p>
+            <a class="btn-default btn" href="./dichvu3.html">Xem thêm</a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="welcome text-center">
-      <div class="welcome-text">
-        <h1>JOLLIBEE, XIN CHÀO</h1>
-        <p>Chúng tôi là Jollibee Việt Nam với hơn 100 cửa hàng trên khắp cả nước, chúng tôi mong muốn đem đến niềm vui ẩm thực cho mọi gia đình Việt bằng những món ăn có chất lượng tốt, hương vị tuyệt hảo, dịch vụ chu đáo với một mức giá hợp lý… Hãy đến và thưởng thức nhé!</p>
-        <button class="btn-default btn-red btn-slide">ĐẶT HÀNG</button>
-      </div>
-    </div>
-
-    <div class="store-search ">
-      <div class="form-search row">
-        <div class="col-md-3 col-xs-12 ">
-          <h3 class="search-control">TÌM CỬA HÀNG</h3>
-        </div>
-        <div class="col-md-3 col-sm-4 px-4">
-          <select name="city" id="" class="search-control">
-            <option value="0">Chọn tỉnh thành</option>
-          </select>
-        </div>
-        <div class="col-md-3 col-sm-4 px-4">
-          <select name="town" id="" class="search-control">
-            <option value="0">Chọn quận huyện</option>
-          </select>
-        </div>
-        <div class="col-md-3 col-sm-4 px-4">
-          <button class="search-control btn-default btn-red btn-search">Tìm kiếm</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="infomation text-center">
-      <div class="info-text">
-        <h3>TIN TỨC</h3>
-      </div>
-      <div class="info-img">
-        <a href="" class="info-link">
-          <div class="tRes">
-            <img src="./img/new1.jpg" alt="">
-          </div>
-        </a>
-        <a href="" class="info-link">
-          <div class="tRes">
-            <img src="./img/news2.jpg" alt="">
-          </div>
-        </a>
-        <a href="" class="info-link">
-          <div class="tRes">
-            <img src="./img/new3.jpg" alt="">
-          </div>
-        </a>
-        <a href="" class="info-link">
-          <div class="tRes">
-            <img src="./img/news4.jfif" alt="">
-          </div>
-        </a>
-      </div>
-      <div class="info-btn">
-        <button class="btn-default btn-red">
-          <a href="./tintuc.html">Xem thêm</a>
-        </button>
-      </div>
-    </div>
-  </div>
-
-    <!-- Modal -->
-    <div class="modal-login" style="display: none;">
-    <div class="modal-overlay">
-    </div>
-    <div class="modal-login__body ">
-      <a href="" class="modal__close">
-        <i class="fa-solid fa-xmark modal__close-icon"></i>
-      </a>
-      <div class="modal__inner text-white">
-        <img src="./img/logo.png" alt="" class="modal__img">
-        <p>ĐĂNG NHẬP BẰNG SĐT</p>
-        <div class="modal__form">
-          <input type="email" class="modal__input" placeholder="Email" >
-        </div>
-        <div class="modal__form">
-          <input type="password" class="modal__input" placeholder="Mật khẩu">
-        </div>
-        <div class="modal__form">
-          <label>
-            <input type="checkbox" name="" id="">
-            <span>
-              Ghi nhớ đăng nhập
-            </span>
-          </label>
-        </div>
-      </div>
-      <div class="modal-option text-center">
-        <p>Quên mật khẩu</p>
-        <button class="btn-default btn-red btn-modal btn-login">ĐĂNG NHẬP</button> <br>
-        <button class="btn-default btn-blue btn-modal btn-option"><i class="fa-brands fa-facebook-f"></i> ĐĂNG NHẬP BẰNG FACEBOOK</button> <br>
-        <button class="btn-default btn-red btn-modal btn-option"><i class="fa-brands fa-google"></i> ĐĂNG NHẬP BẰNG GOOGLE</button> <br>
-        <span>Bạn chưa có tài khoản? Nhấn <a href="./dangky.html">vào đây</a> để đăng ký</span>
-      </div>
-    </div>
-  </div>
-  <footer class="container-fluid footer">
+<footer class="container-fluid footer">
     <div class="footer-img">
       <a href="" class="footer-img__logo">
         <img class="img-responsive" src="./img/LogoJB_New-02.png" alt="">
@@ -470,9 +337,42 @@
       </div>
     </div>
   </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+    <!-- Modal -->
+    <div class="modal-login" style="display: none;">
+      <div class="modal-overlay">
+      </div>
+      <div class="modal-login__body ">
+        <a href="" class="modal__close">
+          <i class="fa-solid fa-xmark modal__close-icon"></i>
+        </a>
+        <div class="modal__inner text-white">
+          <img src="./img/logo.png" alt="" class="modal__img">
+          <p>ĐĂNG NHẬP BẰNG SĐT</p>
+          <div class="modal__form">
+            <input type="email" class="modal__input" placeholder="Email" >
+          </div>
+          <div class="modal__form">
+            <input type="password" class="modal__input" placeholder="Mật khẩu">
+          </div>
+          <div class="modal__form">
+            <label>
+              <input type="checkbox" name="" id="">
+              <span>
+                Ghi nhớ đăng nhập
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="modal-option text-center">
+          <p>Quên mật khẩu</p>
+          <button class="btn-default btn-red btn-modal btn-login">ĐĂNG NHẬP</button> <br>
+          <button class="btn-default btn-blue btn-modal btn-option"><i class="fa-brands fa-facebook-f"></i> ĐĂNG NHẬP BẰNG FACEBOOK</button> <br>
+          <button class="btn-default btn-red btn-modal btn-option"><i class="fa-brands fa-google"></i> ĐĂNG NHẬP BẰNG GOOGLE</button> <br>
+          <span>Bạn chưa có tài khoản? Nhấn <a href="./dangky.html">vào đây</a> để đăng ký</span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+<script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
 </body>
-
-  <script src="./js/app.js"></script>
 </html>

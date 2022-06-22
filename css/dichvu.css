@@ -1,0 +1,141 @@
+.btn-default{
+    padding: 8px 30px;
+    font-size: 14px;
+}
+
+.banner{
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+.service-entry{
+    padding: 4rem 0;
+    position: relative;
+
+}
+.service-entry.odd{
+    z-index: 2;
+}
+.max-width{
+max-width: 900px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+display: flex;
+align-items: center;
+}
+.left{
+    padding-right: 80px;
+}
+.right{
+    font-size: 15px;   
+}
+
+h4,
+.btn{
+    text-transform: uppercase;
+}
+h4{
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: #CE181F;
+    padding-bottom: 35px;
+    font-family: MergeBlack;
+}
+.btn{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px 1px 1px 1px;
+    color: white;
+}
+.btn:hover{
+    background-color: #fac437;
+    border-color: #fac437;
+}
+.even{
+    background-color: #efefef;
+}
+.pic{
+    width: 350px;
+    height: 350px;
+}
+.pic1{
+    width: 350px;
+    height: 385px;
+
+}
+.color1{
+    color: #a8b919;
+}
+p{
+    margin-bottom: 25px;
+}
+.pic2{
+    width: 350px;
+    height: 325px;
+}
+.color2{
+    color: #e97c00;
+}
+.pic3{
+    width: 350px;
+    height: 355px;
+}
+.color3{
+    color: #5dc6d1;
+}
+
+.banner-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: #fff;
+    width: 400px;
+    height: 400px; 
+}
+
+.banner-item {
+    width: 100%;
+    padding: 0 32px;
+}
+
+.banner-item h1{
+    font-family: "MergeBlack";
+    font-size: 45px;
+}
+
+.banner-item p {
+    font-size: 15px;
+    margin: 35px 0;
+    font-weight: 700;
+}
+
+.banner-item i {
+    animation: bounce 0.7s linear infinite;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐẶT TIỆC SINH NHẬT</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/base.css"  type="text/css">
+    <link rel="stylesheet" href="css/dichvu1.css">
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=".//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=vietnamese">
+  </head>
+<body>
+  
+  <div class="offcanvas offcanvas-end text-white " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label" aria-modal="false" role="dialog">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="lang-mb ">
+        <a href="" class="lang-item active-lang">VN</a>/<a href="" class="lang-item">ENG</a>
+       </div>
+      <ul class="navbar-nav justify-content-end flex-grow-1 ">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="./trang-chu.html">TRANG CHỦ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./vejollibee.html">VỀ JOLLIBEE</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="./Thucdon.html">
+            THỰC ĐƠN
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./khuyenmai.html">KHUYẾN MÃI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./dichvu.html">DỊCH VỤ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./tintuc.html">TIN TỨC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./cuahang.html">CỬA HÀNG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./trang-chu.html">LIÊN HỆ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./tuyendung.html">TUYỂN DỤNG</a>
+        </li>
+      </ul>
+      <div class="navbar-list__icon">
+        <a href="" class="list-icon__item">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="" class="list-icon__item">
+          <i class="fa-brands fa-twitter "></i>
+        </a>
+        <a href="" class="list-icon__item">
+          <i class="fa-brands fa-google "></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <header class="header navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
+        <div class="container-fluid ">
+            <button class="navbar-toggler col-4 col-lg-2  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="header-logo col-4 col-lg-2">
+                <a class="navbar-brand logo-img" href="#">
+                    <img src="./img/LogoJB_New-02.png" alt="">
+                </a>
+            </div>
+            <div class="navbar-body ">
+                <div class="user ">
+                  <a href="#" class="user-login btn-icon show-modal">
+                    <i class="fa-solid fa-user "></i>
+                  </a>
+                  <span class="login show-modal">
+                      <a href="" class="login-item">Đăng ký / Đăng nhập</a> 
+                  </span>
+                  <Span class="lang ">
+                      <a href="" class="lang-item active-lang">VN</a>
+                      |
+                      <a href="" class="lang-item">ENG</a>
+                  </Span>
+                </div>
+                <div class="navbar-list">
+                    <div class="">            
+                      <ul class="navbar-nav justify-content-center flex-grow-1 ">
+                        <li class="navbar-item">
+                          <a class="navbar-link active" aria-current="page" href="./trang-chu.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="navbar-item">
+                          <a class="navbar-link" href="./vejollibee.html">VỀ JOLLIBEE</a>
+                        </li>
+                        <li class="navbar-item children">
+                          <a class="navbar-link " href="./Thucdon.html" >
+                            THỰC ĐƠN
+                          </a>
+                          <div class="menu-list">
+                            <ul class="text-center">
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/mon-moi-mon-ngon.png" alt="">
+                                </a>
+                                <h5>COMBO</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/ga-gion-vui-ve.png" alt="">
+                                </a>
+                                <h5>GÀ GIÒN VUI VẺ</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/ga-sot-cay.png" alt="">
+                                </a>
+                                <h5>GÀ SỐT CAY</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/mi-y.png" alt="">
+                                </a>
+                                <h5>MÌ Ý SỐT BÒ BẰM</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/burger-sandwich.png" alt="">
+                                </a>
+                                <h5>BUEGER & CƠM</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/phan-an-phu.png" alt="">
+                                </a>
+                                <h5>PHẦN ĂN PHỤ</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="/img/mon-trang-mieng.png" alt="">
+                                </a>
+                                <h5>MÓN TRÁNG MIỆNG</h5>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link " aria-current="page" href="./khuyenmai.html">KHUYẾN MÃI</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link " aria-current="page" href="./dichvu.html">DỊCH VỤ</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link " aria-current="page" href="./tintuc.html">TIN TỨC</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link " aria-current="page" href="#">CỬA HÀNG</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link " aria-current="page" href="./Trang_lienhe.html">LIÊN HỆ</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link active" aria-current="page" href="./tuyendung.html">TUYỂN DỤNG</a>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+            </div>
+            <div class="delivery col-4 col-lg-2">
+              <a href="" class="delivery-logo">
+                <img class="devivery-img" src="./img/delivery.png" alt="">
+              </a>
+            </div>
+        </div>
+  </header>
+
+      <section class="section1">
+        
+             <div class="text">
+                <h1>TIỆC VUI THẢ GA-ĂN NGON CỰC ĐÃ</h1>
+                <p>
+                    Jollibee luôn muốn làm điều tốt đẹp nhất cho người mà Jollibee yêu quý nhất , còn bạn thì sao? Người bạn yêu quý nhất có phải là những thiên thần bé bỏng nhà mình? Bạn có muốn làm điều gì đó thật đặc biệt cho sinh nhật con bạn không? Nếu có thì hãy bắt tay với Jollibee để thực hiện kế hoạch này nhé!
+                </p>
+                <br>
+                <p>
+                    Không cần phải đi đâu xa, không cần phải suy nghĩ tất tần tật mọi thứ sao cho một buổi tiệc hoàn chỉnh cho các Công chúa -Hoàng Tử nhà mình, các bạn chỉ cần click chọn gói phần ăn nào phù hợp cho con mình và đến cửa hàng gần nhất để lựa chọn dịch vụ của Jollibee. Còn lại hãy để Jolllibee lo nhé!
+                </p>
+            </div>
+            <div class="img">
+                <img class="img1" src="./img/2.png" alt="">
+            </div>
+        
+      </section>
+
+      <section class="section2">
+        <div class="slide-top">
+          <div class="slide1">
+           
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/slider1.jpg" class="d-block w-100" alt="...">
+                </div>              
+                <div class="carousel-item">
+                  <img src="./img/slider2.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">      
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+        
+
+        <div class="slide-bottom">
+         <div class="slide2">
+          <div class="main">
+            <div class="pic1">
+              <img class="img2" src="./img/tpvuinhon.jpg" alt="">
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">            
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="pic2" src="./img/s1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img class="pic2" src="./img/s2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img class="pic2" src="./img/s3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+              </div>
+            </div>                  
+          </div>
+         </div>
+        </div>
+      </section>
+
+      <footer class="container-fluid footer">
+        <div class="footer-img">
+          <a href="" class="footer-img__logo">
+            <img class="img-responsive" src="./img/LogoJB_New-02.png" alt="">
+          </a>
+        </div>
+        <div class="footer-text">
+          <div class="row">
+            <div class="col-4 address ">
+              <p>CÔNG TY TNHH JOLLIBEE VIỆT NAM</p>
+              <p>Địa chỉ: Lầu 5, tòa nhà SCIC, 16 Trương Định, Phường Võ Thị Sáu, Quận 3, Tp. Hồ Chí Minh, Việt Nam</p>
+              <p>Điện thoại: (028) 39309168</p>
+              <p>Tổng đài: <a href="">1900-1533</a></p>
+              <p>Email: <a href="">jbvnfeedback@jollibee.com.vn</a></p>
+              <p>Mã số thuế: 0303883266</p>
+              <p>Ngày cấp: 15/07/2008 – Nơi cấp: Cục Thuế Hồ Chí Minh</p>
+              <p>Gửi phản hồi đến cửa hàng <a href=""><b>TẠI ĐÂY</b></a></p>
+              <p>Gửi phản hồi đến Trụ sở chính Jollibee Việt Nam <b><a href="">TẠI ĐÂY</a></b></p>
+            </div>
+            <div class="col-sm-8">
+              <div class="col-12 col-sm-6 text-center phone">
+                <p class="number">
+                  <a href="" title="GIAO HÀNG TẬN NƠI MIỄN PHÍ">
+                    <img src="./img/delivery-lg.png" alt="" class="img-responsive">
+                  </a>
+                </p>
+              </div>
+              <div class="col-12 col-sm-6 text-center">
+                <p class="text-uppercase">HÃY KẾT NỐI VỚI CHÚNG TÔI</p>
+                <a href="" class="footer-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  
+                </a>
+                <a href="" class="footer-icon">
+                  <i class="fa-brands fa-google"></i>
+                </a>
+                <div class="col-md-12">
+                  <a href="">
+                    <img class="confirm-logo" src="./img/bocongthuong.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-12">
+                <ul class="list-inline list-page">
+                    <li><a href="">Chính sách và quy định chung</a></li>
+                    <li><a href="">Chính sách hoạt động</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="list-inline list-page">
+                    <li><a href="">Chính sách thanh toán khi đặt hàng</a></li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="list-inline list-page">
+                    <li><a href="">Hướng dẫn đặt phần ăn</a></li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="list-inline list-page">
+                    <li><a href="">Thông tin vận chuyển và giao nhận</a></li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="list-inline list-page">
+                    <li><a href="">Thông tin đăng ký giao dịch chung</a></li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="list-inline list-page">
+                    <li><a href="">Chính sách bảo mật thông tin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+        <!-- Modal -->
+        <div class="modal-login" style="display: none;">
+          <div class="modal-overlay">
+          </div>
+          <div class="modal-login__body ">
+            <a href="" class="modal__close">
+              <i class="fa-solid fa-xmark modal__close-icon"></i>
+            </a>
+            <div class="modal__inner text-white">
+              <img src="./img/logo.png" alt="" class="modal__img">
+              <p>ĐĂNG NHẬP BẰNG SĐT</p>
+              <div class="modal__form">
+                <input type="email" class="modal__input" placeholder="Email" >
+              </div>
+              <div class="modal__form">
+                <input type="password" class="modal__input" placeholder="Mật khẩu">
+              </div>
+              <div class="modal__form">
+                <label>
+                  <input type="checkbox" name="" id="">
+                  <span>
+                    Ghi nhớ đăng nhập
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="modal-option text-center">
+              <p>Quên mật khẩu</p>
+              <button class="btn-default btn-red btn-modal btn-login">ĐĂNG NHẬP</button> <br>
+              <button class="btn-default btn-blue btn-modal btn-option"><i class="fa-brands fa-facebook-f"></i> ĐĂNG NHẬP BẰNG FACEBOOK</button> <br>
+              <button class="btn-default btn-red btn-modal btn-option"><i class="fa-brands fa-google"></i> ĐĂNG NHẬP BẰNG GOOGLE</button> <br>
+              <span>Bạn chưa có tài khoản? Nhấn <a href="./dangky.html">vào đây</a> để đăng ký</span>
+            </div>
+          </div>
+        </div>
+        <script src="./js/app.js"></script>
+    
+    <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+    </body>
+    </html>

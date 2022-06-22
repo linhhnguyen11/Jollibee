@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.0.0-beta3-web/css/all.css">
+
+    <title>Tin tức - Jollibee Vietnam</title>
+</head>
+<body>
+  <div class="offcanvas offcanvas-end text-white " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label" aria-modal="false" role="dialog">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="lang-mb ">
+        <a href="" class="lang-item active-lang">VN</a>/<a href="" class="lang-item">ENG</a>
+       </div>
+      <ul class="navbar-nav justify-content-end flex-grow-1 ">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="./trang-chu.html">TRANG CHỦ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./vejollibee.html">VỀ JOLLIBEE</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="./Thucdon.html">
+            THỰC ĐƠN
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./khuyenmai.html">KHUYẾN MÃI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./dichvu.html">DỊCH VỤ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./tintuc.html">TIN TỨC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CỬA HÀNG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./trang-chu.html">LIÊN HỆ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./tuyendung.html">TUYỂN DỤNG</a>
+        </li>
+      </ul>
+      <div class="navbar-list__icon">
+        <a href="" class="list-icon__item">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="" class="list-icon__item">
+          <i class="fa-brands fa-twitter "></i>
+        </a>
+        <a href="" class="list-icon__item">
+          <i class="fa-brands fa-google "></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <header class="header navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
+        <div class="container-fluid ">
+            <button class="navbar-toggler col-4 col-lg-2  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="header-logo col-4 col-lg-2">
+                <a class="navbar-brand logo-img" href="#">
+                    <img src="./img/LogoJB_New-02.png" alt="">
+                </a>
+            </div>
+            <div class="navbar-body ">
+                <div class="user ">
+                  <a href="#" class="user-login btn-icon show-modal">
+                    <i class="fa-solid fa-user "></i>
+                  </a>
+                  <span class="login show-modal">
+                      <a href="" class="login-item">Đăng ký / Đăng nhập</a> 
+                  </span>
+                  <Span class="lang ">
+                      <a href="" class="lang-item active-lang">VN</a>
+                      |
+                      <a href="" class="lang-item">ENG</a>
+                  </Span>
+                </div>
+                <div class="navbar-list">
+                    <div class="">            
+                      <ul class="navbar-nav justify-content-center flex-grow-1 ">
+                        <li class="navbar-item">
+                          <a class="navbar-link " aria-current="page" href="./trang-chu.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="navbar-item">
+                          <a class="navbar-link" href="./vejollibee.html">VỀ JOLLIBEE</a>
+                        </li>
+                        <li class="navbar-item children">
+                          <a class="navbar-link " href="./Thucdon.html" >
+                            THỰC ĐƠN
+                          </a>
+                          <div class="menu-list">
+                            <ul class="text-center">
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/mon-moi-mon-ngon.png" alt="">
+                                </a>
+                                <h5>COMBO</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/ga-gion-vui-ve.png" alt="">
+                                </a>
+                                <h5>GÀ GIÒN VUI VẺ</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/ga-sot-cay.png" alt="">
+                                </a>
+                                <h5>GÀ SỐT CAY</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/mi-y.png" alt="">
+                                </a>
+                                <h5>MÌ Ý SỐT BÒ BẰM</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/burger-sandwich.png" alt="">
+                                </a>
+                                <h5>BUEGER & CƠM</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="./img/phan-an-phu.png" alt="">
+                                </a>
+                                <h5>PHẦN ĂN PHỤ</h5>
+                              </li>
+                              <li class="menu-item">
+                                <a href="./Thucdon.html" class="menu-item__img">
+                                  <img class="menulist-img" src="/img/mon-trang-mieng.png" alt="">
+                                </a>
+                                <h5>MÓN TRÁNG MIỆNG</h5>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link " aria-current="page" href="./khuyenmai.html">KHUYẾN MÃI</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link " aria-current="page" href="./dichvu.html">DỊCH VỤ</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link active" aria-current="page" href="./tintuc.html">TIN TỨC</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link " aria-current="page" href="./cuahang.html">CỬA HÀNG</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link " aria-current="page" href="./Trang_lienhe.html">LIÊN HỆ</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link " aria-current="page" href="./tuyendung.html">TUYỂN DỤNG</a>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+            </div>
+            <div class="delivery col-4 col-lg-2">
+              <a href="" class="delivery-logo">
+                <img class="devivery-img" src="./img/delivery.png" alt="">
+              </a>
+            </div>
+        </div>
+  </header>
+    <div class="section">
+        <div class="banner">
+            <div class="banner-img">
+                <img src="./img/news.jpg" alt="">
+            </div>
+            <div class="banner-text">
+                <div class="banner-item text-center">
+                    <h1>TIN TỨC</h1>
+                    <img src="./img/popline.svg" alt="">
+                    <p>TẬN HƯỞNG NHỮNG KHOẢNH KHẮC TRỌN VẸN CÙNG JOLLIBEE</p>
+                    <a href="#1">
+                      <i class="fa-solid fa-angles-down fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+          <div id="1" class="news-list">
+            <div class="row justify-content-center">
+              <a href="./tintuc1.html" class="news-item">
+                <img src="./img/new1.jpg" alt="">
+                <h3>JOLLIBEE THAM VỌNG TRỞ THÀNH THƯƠNG HIỆU FAST FOOD ĐƯỢC YÊU THÍCH NHẤT VIỆT NAM</h3>
+                <P>Tính đến tháng 12/2021, Jollibee đã có 149 cửa hàng trong hệ thống phủ rộng khắp cả nước, hướng tới mục tiêu sẽ là chuỗi cửa hàng fast food - thức ăn nhanh được ưa chuộng nhất tại Việt Nam.</P>
+              </a>
+              <a href="./tintuc1.html" class="news-item">
+                <img src="./img/new1.jpg" alt="">
+                <h3>JOLLIBEE THAM VỌNG TRỞ THÀNH THƯƠNG HIỆU FAST FOOD ĐƯỢC YÊU THÍCH NHẤT VIỆT NAM</h3>
+                <P>Tính đến tháng 12/2021, Jollibee đã có 149 cửa hàng trong hệ thống phủ rộng khắp cả nước, hướng tới mục tiêu sẽ là chuỗi cửa hàng fast food - thức ăn nhanh được ưa chuộng nhất tại Việt Nam.</P>
+              </a>
+              <a href="./tintuc1.html" class="news-item">
+                <img src="./img/new1.jpg" alt="">
+                <h3>JOLLIBEE THAM VỌNG TRỞ THÀNH THƯƠNG HIỆU FAST FOOD ĐƯỢC YÊU THÍCH NHẤT VIỆT NAM</h3>
+                <P>Tính đến tháng 12/2021, Jollibee đã có 149 cửa hàng trong hệ thống phủ rộng khắp cả nước, hướng tới mục tiêu sẽ là chuỗi cửa hàng fast food - thức ăn nhanh được ưa chuộng nhất tại Việt Nam.</P>
+              </a>
+            </div>
+            
+          </div>
+          <div href="" class="add-list">
+            <h1>Xem thêm</h1>
+            <i class="fa-solid fa-angles-down fa-2x"></i>
+          </div>
+        </div>
+
+        <div class="franchise">
+          <div class="franchise-banner">
+            <img src="./img/transfer-bg.jpg" alt="">
+            <div class="banner-title text-center">
+              <h1>NHƯỢNG QUYỀN</h1>
+              <img src="./img/popline.svg" alt="">
+              <p>CHẤT LƯỢNG TẠO NỀN TẢNG VỮNG CHỨC CHO NIỀM TIN NHÀ ĐẦU TƯ              </p>
+            </div>
+          </div>
+
+          <div class="franchise-body">
+            <ul>
+              <li class="tab-item active">THÔNG TIN NHƯỢNG QUYỀN</li>
+              <li class="tab-item">TIN TỨC NHƯỢNG QUYỀN</li>
+              <li class="tab-item">ĐĂNG KÝ NHƯỢNG QUYỀN</li>
+            </ul>
+            <div class="franchise-inf">
+              <div class="franchise-inf__img">
+                <img src="./img/franchise-left.jpg" alt="">
+              </div>
+              <div class="franchise-inf__tab tab-pane " >
+
+                <p>Hiện tại tập đoàn Jollibee - Phillipines là tập đoàn kinh doanh thức ăn nhanh lớn nhất tại khu vực Châu Á với hơn 30 năm kinh nghiệm – sở hữu 12 thương hiệu với gần 3000 cửa hàng trên toàn cầu, trong đó chỉ tính riêng số lượng cửa hàng Jollibee đã lên đến hơn 900 cửa hàng trên toàn cầu.</p>
+                <p>Hiện nay hệ thống cửa hàng thức ăn nhanh Jollibee đã có hơn 80 cửa hàng trải dài hầu hết các tỉnh thành tại Việt Nam như: Hà Nội, Ninh Bình, Hạ Long, Hải Phòng, Đà Nẵng, Tp.Hồ Chí Minh, Cần Thơ, Nha Trang, Vũng Tàu, Bình Dương, Biên Hòa, Rạch Giá, Long Xuyên, Mỹ Tho, Cà Mau…</p>
+                <p>Với hệ thống quản lý chuyên nghiệp, phục vụ ân cần, món ăn ngon, giá cả hợp lý, chúng tôi vô cùng vui mừng và tự hào giới thiệu đến quý vị mô hình kinh doanh nhượng quyền độc đáo và hấp dẫn. Hiện nay, chúng tôi đang tìm kiếm đối tác Nhượng quyền thương hiệu quan tâm đến kinh doanh hệ thống nhà hàng tiêu chuẩn quốc tế.</p>
+                <p>Các đối tác đầu tư quan tâm xin vui lòng liên hệ qua số tổng đài 1900-1533 để được tư vấn và hỗ trợ chi tiết hơn.</p>
+              </div>
+
+              <div class="row justify-content-center franchise-inf__tab tab-pane " >
+                <div class="list-img">
+                  <a class="inf-item">
+                    <img src="./img/nhuongquyen.jpg" alt="">
+                    <h3>TẬP ĐOÀN JOLLIBEE</h3>
+                    <P>Tính đến tháng 12/2021, Jollibee đã có 149 cửa hàng trong hệ thống phủ rộng khắp cả nước, hướng tới mục tiêu sẽ là chuỗi cửa hàng fast food - thức ăn nhanh được ưa chuộng nhất tại Việt Nam.</P>
+                  </a>
+                  <a class="inf-item">
+                    <img src="./img/nhuongquyen.jpg" alt="">
+                    <h3>NHƯỢNG QUYỀN THUÒNG HIỆU JOLLIBEE</h3>
+                    <P>Tính đến tháng 12/2021, Jollibee đã có 149 cửa hàng trong hệ thống phủ rộng khắp cả nước, hướng tới mục tiêu sẽ là chuỗi cửa hàng fast food - thức ăn nhanh được ưa chuộng nhất tại Việt Nam.</P>
+                  </a>
+                  <a class="inf-item">
+                    <img src="./img/nhuongquyen.jpg" alt="">
+                    <h3>CƠ HỘI NHƯỢNG QUYỀN</h3>
+                    <P>Tính đến tháng 12/2021, Jollibee đã có 149 cửa hàng trong hệ thống phủ rộng khắp cả nước, hướng tới mục tiêu sẽ là chuỗi cửa hàng fast food - thức ăn nhanh được ưa chuộng nhất tại Việt Nam.</P>
+                  </a>
+                </div>
+              </div>
+
+              <div class="franchise-inf__tab tab-pane active">
+                <p>Để đăng ký Nhượng quyền, quý Ông/Bà tải mẫu bên dưới, điền đầy đủ các thông tin và gửi về địa chỉ email: nhuongquyen.vietnam@jollibee.com.vn</p>
+                <p>Mẫu đăng ký Nhượng quyền: <a href="">Register-Form</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+        <!-- Modal -->
+    <div class="modal-login" style="display: none;">
+            <div class="modal-overlay">
+            </div>
+            <div class="modal-login__body ">
+              <a href="" class="modal__close">
+                <i class="fa-solid fa-xmark modal__close-icon"></i>
+              </a>
+              <div class="modal__inner text-white">
+                <img src="./img/logo.png" alt="" class="modal__img">
+                <p>ĐĂNG NHẬP BẰNG SĐT</p>
+                <div class="modal__form">
+                  <input type="email" class="modal__input" placeholder="Email" >
+                </div>
+                <div class="modal__form">
+                  <input type="password" class="modal__input" placeholder="Mật khẩu">
+                </div>
+                <div class="modal__form">
+                  <label>
+                    <input type="checkbox" name="" id="">
+                    <span>
+                      Ghi nhớ đăng nhập
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="modal-option text-center">
+                <p>Quên mật khẩu</p>
+                <button class="btn-default btn-red btn-modal btn-login">ĐĂNG NHẬP</button> <br>
+                <button class="btn-default btn-blue btn-modal btn-option"><i class="fa-brands fa-facebook-f"></i> ĐĂNG NHẬP BẰNG FACEBOOK</button> <br>
+                <button class="btn-default btn-red btn-modal btn-option"><i class="fa-brands fa-google"></i> ĐĂNG NHẬP BẰNG GOOGLE</button> <br>
+                <span>Bạn chưa có tài khoản? Nhấn <a href="">vào đây</a> để đăng ký</span>
+              </div>
+            </div>
+        </div>
+    <footer class="container-fluid footer">
+            <div class="footer-img">
+              <a href="" class="footer-img__logo">
+                <img class="img-responsive" src="./img/LogoJB_New-02.png" alt="">
+              </a>
+            </div>
+            <div class="footer-text">
+              <div class="row">
+                <div class="col-4 address ">
+                  <p>CÔNG TY TNHH JOLLIBEE VIỆT NAM</p>
+                  <p>Địa chỉ: Lầu 5, tòa nhà SCIC, 16 Trương Định, Phường Võ Thị Sáu, Quận 3, Tp. Hồ Chí Minh, Việt Nam</p>
+                  <p>Điện thoại: (028) 39309168</p>
+                  <p>Tổng đài: <a href="">1900-1533</a></p>
+                  <p>Email: <a href="">jbvnfeedback@jollibee.com.vn</a></p>
+                  <p>Mã số thuế: 0303883266</p>
+                  <p>Ngày cấp: 15/07/2008 – Nơi cấp: Cục Thuế Hồ Chí Minh</p>
+                  <p>Gửi phản hồi đến cửa hàng <a href=""><b>TẠI ĐÂY</b></a></p>
+                  <p>Gửi phản hồi đến Trụ sở chính Jollibee Việt Nam <b><a href="">TẠI ĐÂY</a></b></p>
+                </div>
+                <div class="col-sm-8">
+                  <div class="col-12 col-sm-6 text-center phone">
+                    <p class="number">
+                      <a href="" title="GIAO HÀNG TẬN NƠI MIỄN PHÍ">
+                        <img src="./img/delivery-lg.png" alt="" class="img-responsive">
+                      </a>
+                    </p>
+                  </div>
+                  <div class="col-12 col-sm-6 text-center">
+                    <p class="text-uppercase">HÃY KẾT NỐI VỚI CHÚNG TÔI</p>
+                    <a href="" class="footer-icon">
+                      <i class="fa-brands fa-facebook-f"></i>
+                      
+                    </a>
+                    <a href="" class="footer-icon">
+                      <i class="fa-brands fa-google"></i>
+                    </a>
+                    <div class="col-md-12">
+                      <a href="">
+                        <img class="confirm-logo" src="./img/bocongthuong.png" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <ul class="list-inline list-page">
+                        <li><a href="">Chính sách và quy định chung</a></li>
+                        <li><a href="">Chính sách hoạt động</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12">
+                    <ul class="list-inline list-page">
+                        <li><a href="">Chính sách thanh toán khi đặt hàng</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12">
+                    <ul class="list-inline list-page">
+                        <li><a href="">Hướng dẫn đặt phần ăn</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12">
+                    <ul class="list-inline list-page">
+                        <li><a href="">Thông tin vận chuyển và giao nhận</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12">
+                    <ul class="list-inline list-page">
+                        <li><a href="">Thông tin đăng ký giao dịch chung</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12">
+                    <ul class="list-inline list-page">
+                        <li><a href="">Chính sách bảo mật thông tin</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </footer>
+        <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+      <script src="./js/app.js"></script>
+</html>
