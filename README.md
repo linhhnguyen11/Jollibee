@@ -1,2 +1,2 @@
 
-https://linhhnguyen11.github.io/Project/admin-login.html
+https://linhhnguyen11.github.io/Jollibee/checkout.html
