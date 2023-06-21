@@ -398,6 +398,22 @@ const btnClose = document.querySelector(".btn-cancel");
 const btnAccept = document.querySelector(".btn-accept");
 showUserForm.addEventListener("click", (e) => {
   e.preventDefault();
+  const inputFullName = document.getElementById("fullname");
+  const inputEmail = document.getElementById("email");
+  const inputPhone = document.getElementById("phone");
+  const inputCity = document.getElementById("city");
+  const inputDistrict = document.getElementById("district");
+  const inputWard = document.getElementById("ward");
+  const inputAddress = document.getElementById("address");
+  if (userData.fullname !== "") {
+    inputFullName.value = userData.fullname;
+    inputEmail.value = userData.email;
+    inputPhone.value = userData.phone;
+    inputCity.value = userData.city;
+    inputDistrict.value = userData.district;
+    inputWard.value = userData.ward;
+    inputAddress.value = userData.address;
+  }
   overplays.style.visibility = "visible";
 });
 btnShowForm.addEventListener("click", (e) => {
@@ -443,6 +459,9 @@ const checkUser = (userData) => {
     const a = document.querySelector(".show-form");
     a.style.display = "block";
   } else {
+    if (document.querySelector(".info-user")) {
+      document.querySelector(".info-user").remove();
+    }
     const a = document.querySelector(".show-form");
     a.style.display = "none";
     const htmlUser = `<div class="info-user">
@@ -456,7 +475,6 @@ const checkUser = (userData) => {
   }
 };
 
-checkUser(userData);
 ////////////////////////////////
 const radioBtn = document.querySelectorAll('input[name="deliver"]');
 radioBtn.forEach((el) => {
@@ -516,7 +534,6 @@ const citySelection = document.querySelector("#cityStore");
 const storeSelection = document.querySelector("#store");
 storeSelection.disabled = true;
 for (let city in storeStateInfo) {
-  console.log(storeStateInfo[city]);
   citySelection.options[citySelection.options.length] = new Option(
     storeStateInfo[city].name,
     city
@@ -539,6 +556,38 @@ citySelection.onchange = (e) => {
 
 ////////////////////////////////////////////////////////////////////////
 window.onload = () => {
+  const storeLogin = localStorage.getItem("isLoggedIn");
+  if (storeLogin === "1") {
+    userData = {
+      fullname: "",
+      email: "",
+      phone: "",
+      city: "",
+      district: "",
+      ward: "",
+      address: "",
+      note: "",
+      transport: true,
+      pay: true,
+      cartData,
+    };
+  }
+  if (storeLogin === "0") {
+    userData = {
+      fullname: "Linh Nguyễn",
+      email: "abcxyz@gmail.com",
+      phone: "0338321888",
+      city: "Thành Phố Hà Nội",
+      district: "Quận Ba Đình",
+      ward: "Phường Phúc Xá",
+      address: "12",
+      note: "",
+      transport: true,
+      pay: true,
+      cartData,
+    };
+  }
+  checkUser(userData);
   renderCart();
   renderTotalRaw(cartData.totalPrice);
   renderDeliver(cartData.deliver);

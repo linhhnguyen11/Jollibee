@@ -333,6 +333,17 @@
       </div>
     </footer>
     <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
-    <script></script>
+    <script>
+      const btnLogin = document.querySelector(".with-login");
+      const btnNoLogin = document.querySelector(".without-login");
+      btnNoLogin.addEventListener("click", (e) => {
+        e.preventDefault();
+        localStorage.setItem("isLoggedIn", "1");
+      });
+      btnLogin.addEventListener("click", (e) => {
+        e.preventDefault();
+        localStorage.setItem("isLoggedIn", "0");
+      });
+    </script>
   </body>
 </html>
